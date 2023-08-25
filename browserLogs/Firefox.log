@@ -1,0 +1,26 @@
+1667207558395	geckodriver	INFO	Listening on 127.0.0.1:25198
+1667207558789	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/gm/wt6pjgb90bv7ssp159j49b_h0000gn/T/rust_mozprofile3mGLqb"
+2022-10-31 16:12:39.249 plugin-container[6852:287129] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-31 16:12:39.249 plugin-container[6852:287129] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-31 16:12:39.253 plugin-container[6852:287129] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-31 16:12:39.253 plugin-container[6852:287129] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-31 16:12:39.254 plugin-container[6852:287130] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-31 16:12:39.254 plugin-container[6852:287130] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1667207559274	Marionette	INFO	Marionette enabled
+1667207559422	Marionette	INFO	Listening on port 56841
+Read port: 56841
+1667207559624	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/gm/wt6pjgb90bv7ssp159j49b_h0000gn/T/rust_mozprofile3mGLqb/search.json.mozlz4", (void 0)))
+2022-10-31 09:12:42.215 plugin-container[6864:287499] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-31 09:12:42.215 plugin-container[6864:287499] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-31 09:12:42.218 plugin-container[6864:287499] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-31 09:12:42.218 plugin-container[6864:287499] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-31 09:12:42.218 plugin-container[6864:287510] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-31 09:12:42.218 plugin-container[6864:287510] nil host used in call to allowsAnyHTTPSCertificateForHost:
+JavaScript warning: https://d13zo8jzfzdg6k.cloudfront.net/ent/testing/static/dist/vendor.ent.min.js?1667200066956, line 165476: unreachable code after return statement
+JavaScript warning: https://d13zo8jzfzdg6k.cloudfront.net/ent/testing/static/dist/vendor.ent.min.js?1667200066956, line 171524: unreachable code after return statement
+JavaScript warning: https://d13zo8jzfzdg6k.cloudfront.net/ent/testing/static/dist/admin.ent.min.js?1667200066956, line 125372: unreachable code after return statement
+JavaScript warning: https://d13zo8jzfzdg6k.cloudfront.net/ent/testing/static/dist/vendor.ent.min.js?1667200066956, line 165476: unreachable code after return statement
+JavaScript warning: https://d13zo8jzfzdg6k.cloudfront.net/ent/testing/static/dist/vendor.ent.min.js?1667200066956, line 171524: unreachable code after return statement
+JavaScript warning: https://d13zo8jzfzdg6k.cloudfront.net/ent/testing/static/dist/admin.ent.min.js?1667200066956, line 125372: unreachable code after return statement
+1667207572782	Marionette	INFO	Stopped listening on port 56841
