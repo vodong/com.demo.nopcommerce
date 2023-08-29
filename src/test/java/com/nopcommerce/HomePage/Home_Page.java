@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 import com.nopcommerce.HomePage.HomePageObject;
 import com.nopcommerce.LoginPage.LoginPageObject;
+import com.nopcommerce.RegisterPage.RegisterPageObject;
 
 import commons.BaseTest;
 import commons.GlobalConstants;
@@ -25,6 +26,7 @@ public class Home_Page extends BaseTest {
 	HomePageObject home_Page; 
 	String getCurrentUrl;
 	LoginPageObject login_Page;
+	RegisterPageObject register_Page;
 
 	Environment environment;
 
@@ -46,7 +48,7 @@ public class Home_Page extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 01: Open Home Page");
 		getCurrentUrl = home_Page.getPageUrl(driver);
 		assertEquals(home_Page.getPageUrl(driver), GlobalConstants.getGlobalConstants().getHomeURL());
-		login_Page = home_Page.openLoginPage();
+		register_Page = home_Page.openRegisterPage();
 	}
 }
 

@@ -18,20 +18,13 @@ public class HomePageObject extends BasePage {
 		this.driver = driver;
 	}
 
-	public LoginPageObject openLoginPage() {
+	public RegisterPageObject openLoginPage() {
 		waitForElementClickable(driver, FrontHomePageUI.LOGIN_LINK);
 		clickToElement(driver, FrontHomePageUI.LOGIN_LINK);
 		sleepInSecond(ShortTime);
-		return PageGeneratorManager.getLoginpage(driver);
-	}
-
-	public RegisterPageObject clickOnRegisterLink() {
-		waitForElementClickable(driver, FrontHomePageUI.REGISTER_LINK);
-		clickToElement(driver, FrontHomePageUI.REGISTER_LINK);
-		sleepInSecond(ShortTime);
 		return PageGeneratorManager.getRegisterpage(driver);
 	}
-
+	
 	public void clickOnLogoutLink() {
 		waitForElementClickable(driver, FrontHomePageUI.LOGOUT_LINK);
 		clickToElement(driver, FrontHomePageUI.LOGOUT_LINK);
@@ -40,6 +33,13 @@ public class HomePageObject extends BasePage {
 	public boolean isLogoutLinkDisplayed(String logoutText) {
 		waitForElementVisible(driver, FrontHomePageUI.LOGOUT_TEXT, logoutText);
 		return isElementDisplayed(driver, FrontHomePageUI.LOGOUT_TEXT, logoutText);
+	}
+
+	public RegisterPageObject openRegisterPage() {
+		waitForElementClickable(driver, FrontHomePageUI.REGISTER_LINK);
+		clickToElement(driver, FrontHomePageUI.REGISTER_LINK);
+		sleepInSecond(ShortTime);
+		return PageGeneratorManager.getRegisterpage(driver);
 	}
 }
 

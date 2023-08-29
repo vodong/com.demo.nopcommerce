@@ -2,14 +2,12 @@ package com.nopcommerce.RegisterCompletedPage;
 
 import org.openqa.selenium.WebDriver;
 
-import com.nopcommerce.HomePage.HomePageObject;
 import com.nopcommerce.RegisterPage.RegisterPageObject;
 
 import commons.BasePage;
 import commons.GlobalConstants;
 import commons.PageGeneratorManager;
 import pageUIs.nocommerce.RegisterCompletedPage.RegisterCompletedPageUI;
-import pageUIs.nocommerce.RegisterPage.RegisterPageUI;
 
 public class RegisterCompletedPageObject extends BasePage {
 	private WebDriver driver;
@@ -24,6 +22,11 @@ public class RegisterCompletedPageObject extends BasePage {
 		clickToElement(driver, RegisterCompletedPageUI.REGISTER_LINK);
 		sleepInSecond(ShortTime);
 		return PageGeneratorManager.getRegisterpage(driver);
+	}
+
+	public boolean isRegisterLinkOnHeaderDisplayed(String element) {
+		waitForElementVisible(driver, RegisterCompletedPageUI.REGISTER_LINK);
+		return isElementDisplayed(driver, RegisterCompletedPageUI.REGISTER_LINK);
 	}
 
 }

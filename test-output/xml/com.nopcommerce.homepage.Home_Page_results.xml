@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="7.173">
+           time="7.060">
   <properties />
   
   
-            <testcase name="Front_Open_Home_Page" time="7.173" classname="com.nopcommerce.HomePage.Home_Page" />
+            <testcase name="Front_Open_Home_Page" time="7.060" classname="com.nopcommerce.HomePage.Home_Page" />
       
 </testsuite>

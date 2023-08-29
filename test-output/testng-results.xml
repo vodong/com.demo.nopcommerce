@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-11T09:06:13Z" name="Nopcommerce" finished-at="2023-08-11T09:07:21Z" duration-ms="67937">
+  <suite started-at="2023-08-29T04:06:32Z" name="Nopcommerce" finished-at="2023-08-29T04:07:55Z" duration-ms="83041">
     <groups>
+      <group name="Register An Account">
+        <method signature="Register_Page.Front_Register_An_Account_With_The_Invalid_Information(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.RegisterPage.Register_Page@4bb003e9]" name="Front_Register_An_Account_With_The_Invalid_Information" class="com.nopcommerce.RegisterPage.Register_Page"/>
+        <method signature="Register_Page.Front_Register_An_Account_With_The_Valid_Information(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.RegisterPage.Register_Page@4bb003e9]" name="Front_Register_An_Account_With_The_Valid_Information" class="com.nopcommerce.RegisterPage.Register_Page"/>
+        <method signature="Register_Page.Front_Register_An_Account_With_The_Email_Has_Already_Registered(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.RegisterPage.Register_Page@4bb003e9]" name="Front_Register_An_Account_With_The_Email_Has_Already_Registered" class="com.nopcommerce.RegisterPage.Register_Page"/>
+      </group> <!-- Register An Account -->
     </groups>
-    <test started-at="2023-08-11T09:06:13Z" name="Run on Firefox" finished-at="2023-08-11T09:07:21Z" duration-ms="67937">
+    <test started-at="2023-08-29T04:06:32Z" name="Run on Firefox" finished-at="2023-08-29T04:07:55Z" duration-ms="83041">
       <class name="com.nopcommerce.HomePage.Home_Page">
-        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.HomePage.Home_Page@151db587]" started-at="2023-08-11T09:06:13Z" name="beforeClass" finished-at="2023-08-11T09:06:22Z" duration-ms="8691" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.HomePage.Home_Page@77010a30]" started-at="2023-08-29T04:06:32Z" name="beforeClass" finished-at="2023-08-29T04:06:42Z" duration-ms="10083" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="Front_Open_Home_Page(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.HomePage.Home_Page@151db587]" started-at="2023-08-11T09:06:22Z" name="Front_Open_Home_Page" finished-at="2023-08-11T09:06:29Z" duration-ms="7173" status="PASS">
+        <test-method signature="Front_Open_Home_Page(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.HomePage.Home_Page@77010a30]" started-at="2023-08-29T04:06:42Z" name="Front_Open_Home_Page" finished-at="2023-08-29T04:06:49Z" duration-ms="7060" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,62 +65,8 @@
           </reporter-output>
         </test-method> <!-- Front_Open_Home_Page -->
       </class> <!-- com.nopcommerce.HomePage.Home_Page -->
-      <class name="com.nopcommerce.LoginPage.Login_Page">
-        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.LoginPage.Login_Page@238acd0b]" started-at="2023-08-11T09:06:29Z" name="beforeClass" finished-at="2023-08-11T09:06:29Z" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[local]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[localhost]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[4444]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="Front_Open_Login_Page(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.LoginPage.Login_Page@238acd0b]" started-at="2023-08-11T09:06:29Z" name="Front_Open_Login_Page" finished-at="2023-08-11T09:06:32Z" duration-ms="3548" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.LoginPage.Login_Page.Front_Open_Login_Page(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Front_Open_Login_Page -->
-      </class> <!-- com.nopcommerce.LoginPage.Login_Page -->
       <class name="com.nopcommerce.RegisterPage.Register_Page">
-        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.RegisterPage.Register_Page@23811a09]" started-at="2023-08-11T09:06:32Z" name="beforeClass" finished-at="2023-08-11T09:06:32Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.RegisterPage.Register_Page@4bb003e9]" started-at="2023-08-29T04:06:49Z" name="beforeClass" finished-at="2023-08-29T04:06:49Z" duration-ms="29" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -156,17 +107,50 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="Front_Open_Login_Page(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.RegisterPage.Register_Page@23811a09]" started-at="2023-08-11T09:06:32Z" name="Front_Open_Login_Page" finished-at="2023-08-11T09:07:21Z" duration-ms="48436" status="PASS">
+        <test-method signature="Front_Register_An_Account_With_The_Invalid_Information(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.RegisterPage.Register_Page@4bb003e9]" started-at="2023-08-29T04:06:49Z" name="Front_Register_An_Account_With_The_Invalid_Information" finished-at="2023-08-29T04:07:12Z" duration-ms="22622" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.nopcommerce.RegisterPage.Register_Page.Front_Open_Login_Page(java.lang.reflect.Method)]]>
+                <![CDATA[public void com.nopcommerce.RegisterPage.Register_Page.Front_Register_An_Account_With_The_Invalid_Information(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Front_Open_Login_Page -->
+        </test-method> <!-- Front_Register_An_Account_With_The_Invalid_Information -->
+        <test-method signature="Front_Register_An_Account_With_The_Valid_Information(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.RegisterPage.Register_Page@4bb003e9]" started-at="2023-08-29T04:07:12Z" name="Front_Register_An_Account_With_The_Valid_Information" finished-at="2023-08-29T04:07:31Z" depends-on-methods="com.nopcommerce.RegisterPage.Register_Page.Front_Register_An_Account_With_The_Invalid_Information" duration-ms="19320" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.RegisterPage.Register_Page.Front_Register_An_Account_With_The_Valid_Information(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Front_Register_An_Account_With_The_Valid_Information -->
+        <test-method signature="Front_Register_An_Account_With_The_Email_Has_Already_Registered(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.RegisterPage.Register_Page@4bb003e9]" started-at="2023-08-29T04:07:31Z" name="Front_Register_An_Account_With_The_Email_Has_Already_Registered" finished-at="2023-08-29T04:07:55Z" depends-on-methods="com.nopcommerce.RegisterPage.Register_Page.Front_Register_An_Account_With_The_Valid_Information, com.nopcommerce.RegisterPage.Register_Page.Front_Register_An_Account_With_The_Invalid_Information" duration-ms="23267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.RegisterPage.Register_Page.Front_Register_An_Account_With_The_Email_Has_Already_Registered(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Front_Register_An_Account_With_The_Email_Has_Already_Registered -->
+        <test-method is-config="true" signature="afterClass(java.lang.String)[pri:0, instance:com.nopcommerce.RegisterPage.Register_Page@4bb003e9]" started-at="2023-08-29T04:07:55Z" name="afterClass" finished-at="2023-08-29T04:07:55Z" duration-ms="174" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
       </class> <!-- com.nopcommerce.RegisterPage.Register_Page -->
     </test> <!-- Run on Firefox -->
   </suite> <!-- Nopcommerce -->

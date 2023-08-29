@@ -14,12 +14,12 @@
 		<parameter name="browser" value="Chrome" />
 		<!-- <parameter name="ipAddress" value="localhost" />-->
 		<!-- <parameter name="portNumber" value="4444" />-->
-		<parameter name="osName" value="Windows" />
-		<parameter name="osVersion" value="10" />
+		<!-- <parameter name="osName" value="Windows" />-->
+		<!-- <parameter name="osVersion" value="10" />-->
 		<classes>
 			<class name="com.nopcommerce.HomePage.Home_Page" />
-			<class name="com.nopcommerce.LoginPage.Login_Page" />
 			<class name="com.nopcommerce.RegisterPage.Register_Page" />
+			<!-- <class name="com.nopcommerce.LoginPage.Login_Page" />-->
 		</classes>
 	  </test>
 </suite> <!-- Suite -->

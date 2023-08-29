@@ -10,13 +10,14 @@
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
   <test thread-count="3" parallel="tests" name="Run on Firefox(failed)">
-    <parameter name="osVersion" value="10"/>
     <parameter name="browser" value="Chrome"/>
-    <parameter name="osName" value="Windows"/>
     <classes>
       <class name="com.nopcommerce.RegisterPage.Register_Page">
         <methods>
-          <include name="Front_Open_Login_Page" invocation-numbers="0"/>
+          <include name="Front_Register_An_Account_With_The_Invalid_Information"/>
+          <include name="Front_Register_An_Account_With_The_Email_Has_Already_Registered" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="Front_Register_An_Account_With_The_Valid_Information"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.nopcommerce.RegisterPage.Register_Page -->
