@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Run on Firefox"
+<testsuite name="Run on Chrome"
            tests="3"
            failures="0"
            errors="0"
            skipped="0"
-           time="65.209">
+           time="59.498">
   <properties />
   
   
-            <testcase name="Front_Register_An_Account_With_The_Valid_Information" time="19.320" classname="com.nopcommerce.RegisterPage.Register_Page" />
-                <testcase name="Front_Register_An_Account_With_The_Invalid_Information" time="22.622" classname="com.nopcommerce.RegisterPage.Register_Page" />
-                <testcase name="Front_Register_An_Account_With_The_Email_Has_Already_Registered" time="23.267" classname="com.nopcommerce.RegisterPage.Register_Page" />
+            <testcase name="Front_Register_An_Account_With_The_Email_Has_Already_Registered" time="22.014" classname="com.nopcommerce.RegisterPage.Register_Page" />
+                <testcase name="Front_Register_An_Account_With_The_Valid_Information" time="16.097" classname="com.nopcommerce.RegisterPage.Register_Page" />
+                <testcase name="Front_Register_An_Account_With_The_Invalid_Information" time="21.387" classname="com.nopcommerce.RegisterPage.Register_Page" />
       
 </testsuite>

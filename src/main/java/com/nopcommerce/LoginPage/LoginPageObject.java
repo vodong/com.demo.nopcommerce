@@ -28,5 +28,30 @@ public class LoginPageObject extends BasePage {
 		sleepInSecond(ShortTime);
 		return PageGeneratorManager.getRegisterpage(driver);
 	}
+
+	public void inputEmailAddress(String invalidEmailFormat) {
+	waitForElementVisible(driver, FrontLoginPageUI.EMAIL_TEXTBOX);
+	sendkeyToElement(driver, FrontLoginPageUI.EMAIL_TEXTBOX, invalidEmailFormat);
+	}
+
+	public boolean isErrorMessageInvalidEmailLine1Displayed(String errorMessageInvalidData1) {
+		waitForElementVisible(driver, FrontLoginPageUI.ERROR_MESSAGE_LINE_1, errorMessageInvalidData1);
+		return isElementDisplayed(driver, FrontLoginPageUI.ERROR_MESSAGE_LINE_1, errorMessageInvalidData1);
+	}
+
+	public boolean isErrorMessageInvalidEmailLine2Displayed(String errorMessageInvalidData) {
+		waitForElementVisible(driver, FrontLoginPageUI.ERROR_MESSAGE_LINE_2, errorMessageInvalidData);
+		return isElementDisplayed(driver, FrontLoginPageUI.ERROR_MESSAGE_LINE_2, errorMessageInvalidData);
+	}
+
+	public void inputPassword(String invalidPassword) {
+		waitForElementVisible(driver, FrontLoginPageUI.PASSWORD_TEXTBOX);
+		sendkeyToElement(driver, FrontLoginPageUI.PASSWORD_TEXTBOX, invalidPassword);
+	}
+
+	public String getErrorMessage(WebDriver driver) {
+		waitForElementVisible(driver, FrontLoginPageUI.ERROR_MESSAGE_BELOW_EMAIL_TEXTBOX);
+		return getElementText(driver, FrontLoginPageUI.ERROR_MESSAGE_BELOW_EMAIL_TEXTBOX);
+	}
 }
 

@@ -1,0 +1,15 @@
+<!ELEMENT suite (listeners,parameter+,test)>
+<!ATTLIST suite name NMTOKEN #REQUIRED>
+<!ATTLIST suite parallel NMTOKEN #REQUIRED>
+<!ATTLIST suite thread-count NMTOKEN #REQUIRED>
+<!ELEMENT listeners (listener+)>
+<!ELEMENT listener EMPTY>
+<!ATTLIST listener class-name NMTOKEN #REQUIRED>
+<!ELEMENT parameter EMPTY>
+<!ATTLIST parameter name NMTOKEN #REQUIRED>
+<!ATTLIST parameter value NMTOKEN #REQUIRED>
+<!ELEMENT test (parameter,packages)>
+<!ATTLIST test name CDATA #REQUIRED>
+<!ELEMENT packages (package+)>
+<!ELEMENT package EMPTY>
+<!ATTLIST package name NMTOKEN #REQUIRED>

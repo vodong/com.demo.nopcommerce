@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Run on Firefox"
+<testsuite name="Run on Chrome"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="7.060">
+           time="6.011">
   <properties />
   
   
-            <testcase name="Front_Open_Home_Page" time="7.060" classname="com.nopcommerce.HomePage.Home_Page" />
+            <testcase name="Front_Open_Home_Page" time="6.011" classname="com.nopcommerce.HomePage.Home_Page" />
       
 </testsuite>

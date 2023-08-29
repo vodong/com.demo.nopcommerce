@@ -2,6 +2,7 @@ package com.nopcommerce.RegisterPage;
 
 import org.openqa.selenium.WebDriver;
 
+import com.nopcommerce.LoginPage.LoginPageObject;
 import com.nopcommerce.RegisterCompletedPage.RegisterCompletedPageObject;
 
 import commons.BasePage;
@@ -102,6 +103,12 @@ public class RegisterPageObject extends BasePage {
 	public boolean isErrorMessageEmailAlreadyExist(String errorMessageEmailAlreadyExist) {
 		waitForElementVisible(driver, RegisterPageUI.ERROR_MESSAGE_EMAIL_ALREADY_EXIST, errorMessageEmailAlreadyExist);
 		return isElementDisplayed(driver, RegisterPageUI.ERROR_MESSAGE_EMAIL_ALREADY_EXIST, errorMessageEmailAlreadyExist);
+	}
+
+	public LoginPageObject clickOnLoginLinkOnHeader() {
+		waitForElementClickable(driver, RegisterPageUI.LOGIN_LINK_ON_HEADER);
+		clickToElement(driver, RegisterPageUI.LOGIN_LINK_ON_HEADER);
+		return PageGeneratorManager.getLoginpage(driver);
 	}
 
 }

@@ -121,10 +121,10 @@ public class Register_Page extends BaseTest {
 	public void Front_Register_An_Account_With_The_Email_Has_Already_Registered(Method method) {
 		ExtentTestManager.startTest(method.getName(), "Register An Account With The Email Has Already ");	
 		if(register_Completed_Page.isRegisterLinkOnHeaderDisplayed(GlobalConstantsRegisterCompletedPage.getGlobalConstants().getRegisterElement())) {
-			System.out.print(("Link is displayed"));
 			register_Page = register_Completed_Page.clickOnRegisterLink();
 		}else {
-			System.out.print(("Link isn't displayed " ));
+			home_Page = register_Completed_Page.clickOnLogoutLink();
+			register_Page = home_Page.openRegisterPage();
 		}
 		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 1: Input Firstname");
 			register_Page.inputFirstname(fristname);
@@ -146,13 +146,6 @@ public class Register_Page extends BaseTest {
 			register_Page.clickOnRegisterButton();
 		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 10: Verify The Error Message when Registering An Account With The Email Existed");
 			assertTrue(register_Page.isErrorMessageEmailAlreadyExist(GlobalConstantsRegisterPage.getGlobalConstants().getErrorMessageEmailAlreadyExist()));
-	}
-	
-	@Parameters({"browser"})
-	@AfterClass(alwaysRun = true)
-	public void afterClass(String browserName) {
-		ExtentTestManager.getTest().log(Status.INFO, "Close browser '" + browserName + "'");
-		closeBrowserAndDriver();
 	}
 }
 

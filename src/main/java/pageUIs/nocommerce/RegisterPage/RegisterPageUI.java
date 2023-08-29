@@ -18,4 +18,5 @@ public class RegisterPageUI {
 	public static final String ERROR_MESSAGE_PASSWORD_TEXTBOX = "XPATH= //input[@id='Password']/parent::div//span[@id='Password-error' and contains(.,'%s')]";
 	public static final String CONFIRM_PASSWORD_TEXTBOX = "XPATH= //div[@class='inputs']//input[@name='ConfirmPassword']";
 	public static final String ERROR_MESSAGE_CONFIRM_PASSWORD_TEXTBOX = "XPATH= //input[@id='ConfirmPassword']/parent::div//span[@id='ConfirmPassword-error' and contains(.,'%s')]";
+	public static final String LOGIN_LINK_ON_HEADER = "XPATH= //div[@class='header-links']//a[@class='ico-login']";
 }

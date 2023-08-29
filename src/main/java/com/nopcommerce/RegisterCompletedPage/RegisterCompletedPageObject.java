@@ -2,6 +2,7 @@ package com.nopcommerce.RegisterCompletedPage;
 
 import org.openqa.selenium.WebDriver;
 
+import com.nopcommerce.HomePage.HomePageObject;
 import com.nopcommerce.RegisterPage.RegisterPageObject;
 
 import commons.BasePage;
@@ -27,6 +28,12 @@ public class RegisterCompletedPageObject extends BasePage {
 	public boolean isRegisterLinkOnHeaderDisplayed(String element) {
 		waitForElementVisible(driver, RegisterCompletedPageUI.REGISTER_LINK);
 		return isElementDisplayed(driver, RegisterCompletedPageUI.REGISTER_LINK);
+	}
+
+	public HomePageObject clickOnLogoutLink() {
+		waitForElementClickable(driver, RegisterCompletedPageUI.LOGOUT_LINK);
+		clickToElement(driver, RegisterCompletedPageUI.LOGOUT_LINK);
+		return PageGeneratorManager.getHomepage(driver);
 	}
 
 }

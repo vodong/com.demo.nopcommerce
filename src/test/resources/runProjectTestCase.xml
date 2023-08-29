@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Nopcommerce" parallel="tests" thread-count="3">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Nopcommerce" thread-count="3">
 	<listeners>
 		<listener class-name="commons.MethodListener"/>
 		<listener class-name="reportConfig.ExtentTestListener"/>
@@ -10,16 +11,16 @@
 	<parameter name="envName" value="local" />
 	<parameter name="serverName" value="Test" />
 	  
-	  	<test name="Run on Firefox">
+	  	<test name="Run on Chrome">
 		<parameter name="browser" value="Chrome" />
 		<!-- <parameter name="ipAddress" value="localhost" />-->
 		<!-- <parameter name="portNumber" value="4444" />-->
 		<!-- <parameter name="osName" value="Windows" />-->
 		<!-- <parameter name="osVersion" value="10" />-->
-		<classes>
-			<class name="com.nopcommerce.HomePage.Home_Page" />
-			<class name="com.nopcommerce.RegisterPage.Register_Page" />
-			<!-- <class name="com.nopcommerce.LoginPage.Login_Page" />-->
-		</classes>
+		<packages>
+			<package name="com.nopcommerce.HomePage" />
+			<package name="com.nopcommerce.RegisterPage" />
+			<package name="com.nopcommerce.LoginPage" />
+		</packages>
 	  </test>
-</suite> <!-- Suite -->
+</suite>

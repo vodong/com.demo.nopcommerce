@@ -33,9 +33,14 @@ public class GlobalConstantsLoginPage {
 	// Definition URL
 	private final String loginURL = "https://demo.nopcommerce.com/login?returnUrl=%2F";
 	private final String registerURL = "https://demo.nopcommerce.com/register?returnUrl=%2F";
-	private final String adminTestingUrl = "";
-	private final String adminStagingUrl = "";
-	private final String advertiserTestUrl = "";
+	private final String invalidEmailFormat = "test.com";
+	private final String emailDoesNotExist = "test_ed@yop.com";
+	private final String invalidPassword = "Admin@123";
+	private final String errorMessageEmptyData = "Please enter your email";
+	private final String errorMessageInvalidEmail = "Wrong email";
+	private final String errorMessageEmailDoesNotExist = "No customer account fount";
+	private final String errorMessageInvalidData1 = "Login was unsuccessful. Please correct the errors and try again.";
+	private final String errorMessageInvalidData2 = "The credentials provided are incorrect";
 
 	// Browser Stack
 	private final String browserUserName = "vodongpham_vbRLlM";

@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nopcommerce.loginpage.Login_Page">
+      <class name="com.nopcommerce.LoginPage.Login_Page">
         <methods>
           <include name="Front_Open_Login_Page" invocation-numbers="0"/>
           <include name="beforeClass"/>
+          <include name="Front_Login_With_The_Invalid_Email"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.nopcommerce.loginpage.Login_Page -->
+      </class> <!-- com.nopcommerce.LoginPage.Login_Page -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
