@@ -18,6 +18,7 @@ import com.nopcommerce.LoginPage.LoginPageObject;
 
 import commons.BaseTest;
 import commons.GlobalConstantsLoginPage;
+import commons.GlobalConstantsRegisterPage;
 import commons.PageGeneratorManager;
 import environmentConfig.Environment;
 import helpers.PropertiesHelper;
@@ -69,12 +70,23 @@ public class My_Account_Page extends BaseTest {
 		myAccount_Page = home_Page.clickonMyAccountLink();
 		assertEquals(home_Page.isMyAccountLinkDisplayed(driver),"My account");
 		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Info Page - Step 03: Update Gender");
+		myAccount_Page.selectGender("male");
 		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Info Page - Step 04: Update First Name");
-		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Info Page - Step 04: Update Last Name");
-		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Info Page - Step 04: Update Date Of Birth");
-		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Info Page - Step 05: Update Email Address");
-		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Info Page - Step 06: Update Company Name");
-		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Info Page - Step 07: Click On Save Button");
+		myAccount_Page.inputFirstname("1");
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Info Page - Step 05: Update Last Name");
+		myAccount_Page.inputLastname("2");
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Info Page - Step 06: Select Day Of Birth");
+		myAccount_Page.selectDayDropDown("1");
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Info Page - Step 07: Select Month Of Birth");
+		myAccount_Page.selectMonthDropDown("April");
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Info Page - Step 08: Select Year Of Birth");
+		myAccount_Page.selectYearDropDown("1987");
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Info Page - Step 09: Update Email Address");
+		myAccount_Page.inputEmailaddress("edward_ecommerce491468@yopmail.com");
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Info Page - Step 10: Update Company Name");
+		myAccount_Page.inputCompanyname("1231231");
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Info Page - Step 11: Click On Save Button");
+		myAccount_Page.clickOnSaveButton();
 	}
 	
 	@Test (groups = "My Account", dependsOnMethods = "My_Account_Login_Success")
