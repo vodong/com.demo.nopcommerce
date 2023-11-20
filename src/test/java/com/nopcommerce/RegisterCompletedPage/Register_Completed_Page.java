@@ -1,27 +1,16 @@
 package com.nopcommerce.RegisterCompletedPage;
 
-import static org.testng.Assert.assertTrue;
-
-import java.lang.reflect.Method;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
-import com.aventstack.extentreports.Status;
+
 import com.nopcommerce.HomePage.HomePageObject;
 import com.nopcommerce.LoginPage.LoginPageObject;
 
 import commons.BaseTest;
-import commons.GlobalConstantsHomePage;
-import commons.GlobalConstantsLoginPage;
-import commons.GlobalConstantsRegisterPage;
-import commons.PageGeneratorManager;
 import environmentConfig.Environment;
-import reportConfig.ExtentTestManager;
 
 public class Register_Completed_Page extends BaseTest {
 	WebDriver driver;
@@ -48,7 +37,6 @@ public class Register_Completed_Page extends BaseTest {
 		fristname =  "Edward" + generateNumber();
 		lastname =  "Vo" + generateNumber();
 		invalidPassword = "123";
-		
 	}
 
 }

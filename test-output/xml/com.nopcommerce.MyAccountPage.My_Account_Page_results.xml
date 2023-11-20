@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on Chrome"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="13.049">
+  <properties />
+  
+  
+            <testcase name="My_Account_Login_Success" time="8.266" classname="com.nopcommerce.MyAccountPage.My_Account_Page" />
+                <testcase name="Front_Login_Without_Inputting" time="4.783" classname="com.nopcommerce.MyAccountPage.My_Account_Page" />
+      
+</testsuite>

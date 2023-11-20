@@ -32,6 +32,7 @@ public class GlobalConstantsRegisterCompletedPage {
 
 	// Definition Information
 	private final String registerElement = "//div[@class='header-links']//a[@class='ico-register']";
+	private final String logoutElement = "ico-logout";
 
 
 	// Browser Stack

@@ -25,15 +25,20 @@ public class RegisterCompletedPageObject extends BasePage {
 		return PageGeneratorManager.getRegisterpage(driver);
 	}
 
-	public boolean isRegisterLinkOnHeaderDisplayed(String element) {
-		waitForElementVisible(driver, RegisterCompletedPageUI.REGISTER_LINK);
-		return isElementDisplayed(driver, RegisterCompletedPageUI.REGISTER_LINK);
-	}
-
 	public HomePageObject clickOnLogoutLink() {
 		waitForElementClickable(driver, RegisterCompletedPageUI.LOGOUT_LINK);
 		clickToElement(driver, RegisterCompletedPageUI.LOGOUT_LINK);
 		return PageGeneratorManager.getHomepage(driver);
+	}
+
+	public boolean isLoginLinkOnHeaderDisplayed() {
+		waitForElementVisible(driver, RegisterCompletedPageUI.LOGIN_LINK);
+		return isElementDisplayed(driver, RegisterCompletedPageUI.LOGIN_LINK);
+	}
+
+	public boolean isLoginLinkOnHeaderDisplayed(String string) {
+		waitForElementVisible(driver, RegisterCompletedPageUI.LOGIN_LINK, string);
+		return isElementDisplayed(driver, RegisterCompletedPageUI.LOGIN_LINK, string);
 	}
 
 }

@@ -2,6 +2,8 @@ package com.nopcommerce.LoginPage;
 
 import org.openqa.selenium.WebDriver;
 
+import com.nopcommerce.HomePage.HomePageObject;
+import com.nopcommerce.MyAccountPage.MyAccountPageObject;
 import com.nopcommerce.RegisterPage.RegisterPageObject;
 
 import commons.BasePage;
@@ -17,9 +19,11 @@ public class LoginPageObject extends BasePage {
 		this.driver = driver;
 	}
 
-	public void clickOnLoginButton() {
+	public HomePageObject clickOnLoginButton() {
 		waitForElementClickable(driver, FrontLoginPageUI.LOGIN_BUTTON);
 		clickToElement(driver, FrontLoginPageUI.LOGIN_BUTTON);
+		sleepInSecond(ShortTime);
+		return PageGeneratorManager.getHomepage(driver);
 	}
 
 	public RegisterPageObject clickOnRegisterButton() {

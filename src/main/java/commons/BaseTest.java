@@ -123,33 +123,33 @@ public class BaseTest {
 					if (osName.contains("window")) {
 						cmd = "taskkill /F /FI \"IMAGENAME eq chromedriver*\"";
 					} else {
-						cmd = "pkill chromedriver";
+						cmd = "sudo pkill chromedriver";
 					}
 				} else if (driverInstanceName.contains("internetexplorer")) {
 					if (osName.contains("window")) {
 						cmd = "taskkill /F /FI \"IMAGENAME eq IEDriverServer*\"";
 					}
 				} else if (driverInstanceName.contains("firefox")) {
-					if (osName.contains("windows")) {
+					if (osName.contains("window")) {
 						cmd = "taskkill /F /FI \"IMAGENAME eq geckodriver*\"";
 					} else {
-						cmd = "pkill geckodriver";
+						cmd = "sudo pkill geckodriver";
 					}
 				} else if (driverInstanceName.contains("edge")) {
 					if (osName.contains("window")) {
 						cmd = "taskkill /F /FI \"IMAGENAME eq msedgedriver*\"";
 					} else {
-						cmd = "pkill msedgedriver";
+						cmd = "sudo pkill msedgedriver";
 					}
 				} else if (driverInstanceName.contains("opera")) {
 					if (osName.contains("window")) {
 						cmd = "taskkill /F /FI \"IMAGENAME eq operadriver*\"";
 					} else {
-						cmd = "pkill operadriver";
+						cmd = "sudo pkill operadriver";
 					}
 				} else if (driverInstanceName.contains("safari")) {
 					if (osName.contains("mac")) {
-						cmd = "pkill safaridriver";
+						cmd = "sudo pkill safaridriver";
 					}
 				}
 

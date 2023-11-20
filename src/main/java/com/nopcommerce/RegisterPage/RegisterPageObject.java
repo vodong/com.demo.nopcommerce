@@ -13,6 +13,7 @@ import pageUIs.nocommerce.RegisterPage.RegisterPageUI;
 public class RegisterPageObject extends BasePage {
 	private WebDriver driver;
 	private long ShortTime = GlobalConstants.getGlobalConstants().getShortTimeoutWaiElement();
+	private long LongTime = GlobalConstants.getGlobalConstants().getLongTimeout();
 	
 	public RegisterPageObject(WebDriver driver) {
 		this.driver = driver;

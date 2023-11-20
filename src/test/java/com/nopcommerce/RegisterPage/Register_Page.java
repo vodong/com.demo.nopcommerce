@@ -4,9 +4,9 @@ import static org.testng.Assert.assertTrue;
 
 import java.lang.reflect.Method;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -18,7 +18,6 @@ import com.nopcommerce.RegisterCompletedPage.RegisterCompletedPageObject;
 
 import commons.BaseTest;
 import commons.GlobalConstantsLoginPage;
-import commons.GlobalConstantsRegisterCompletedPage;
 import commons.GlobalConstantsRegisterPage;
 import commons.PageGeneratorManager;
 import environmentConfig.Environment;
@@ -119,12 +118,15 @@ public class Register_Page extends BaseTest {
 	
 	@Test (groups = "Register An Account", dependsOnMethods = {"Front_Register_An_Account_With_The_Invalid_Information" ,"Front_Register_An_Account_With_The_Valid_Information"})
 	public void Front_Register_An_Account_With_The_Email_Has_Already_Registered(Method method) {
-		ExtentTestManager.startTest(method.getName(), "Register An Account With The Email Has Already ");	
-		if(register_Completed_Page.isRegisterLinkOnHeaderDisplayed(GlobalConstantsRegisterCompletedPage.getGlobalConstants().getRegisterElement())) {
-			register_Page = register_Completed_Page.clickOnRegisterLink();
-		}else {
+		ExtentTestManager.startTest(method.getName(), "Register An Account With The Email Has Already ");
+		register_Completed_Page.refeshCurrentPage(driver);
+		register_Completed_Page.sleepInSecond(5);
+		if(!driver.findElement(By.className("ico-login")).isDisplayed()) 
+		{
 			home_Page = register_Completed_Page.clickOnLogoutLink();
 			register_Page = home_Page.openRegisterPage();
+		}else {
+			register_Page = register_Completed_Page.clickOnRegisterLink();
 		}
 		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 1: Input Firstname");
 			register_Page.inputFirstname(fristname);
@@ -147,5 +149,6 @@ public class Register_Page extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 10: Verify The Error Message when Registering An Account With The Email Existed");
 			assertTrue(register_Page.isErrorMessageEmailAlreadyExist(GlobalConstantsRegisterPage.getGlobalConstants().getErrorMessageEmailAlreadyExist()));
 	}
+
 }
 

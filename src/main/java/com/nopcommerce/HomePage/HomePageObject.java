@@ -3,6 +3,7 @@ package com.nopcommerce.HomePage;
 import org.openqa.selenium.WebDriver;
 
 import com.nopcommerce.LoginPage.LoginPageObject;
+import com.nopcommerce.MyAccountPage.MyAccountPageObject;
 import com.nopcommerce.RegisterPage.RegisterPageObject;
 
 import commons.BasePage;
@@ -40,6 +41,17 @@ public class HomePageObject extends BasePage {
 		clickToElement(driver, FrontHomePageUI.REGISTER_LINK);
 		sleepInSecond(ShortTime);
 		return PageGeneratorManager.getRegisterpage(driver);
+	}
+
+	public String isMyAccountLinkDisplayed(WebDriver driver) {
+		waitForElementVisible(driver, FrontHomePageUI.MYACOUNT_LINK);
+		return getElementText(driver, FrontHomePageUI.MYACOUNT_LINK);
+	}
+
+	public MyAccountPageObject clickonMyAccountLink() {
+		waitForElementClickable(driver, FrontHomePageUI.MYACOUNT_LINK);
+		clickToElement(driver, FrontHomePageUI.MYACOUNT_LINK);
+		return PageGeneratorManager.getMyAccountPage(driver);
 	}
 }
 

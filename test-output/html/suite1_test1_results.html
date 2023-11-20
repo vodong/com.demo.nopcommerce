@@ -12,178 +12,12 @@
 <body>
 <h1>Run on Chrome</h1>
 <p>
-  Test duration: 118.377s
+  Test duration: 140.067s
 </p>
 
 
 
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">com.nopcommerce.LoginPage.Login_Page</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  Front_Login_With_The_Email_Does_Not_Exist
-      </td>
-  <td class="duration">
-    33.435s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.LoginPage.Login_Page.Front_Login_With_The_Email_Does_Not_Exist(java.lang.reflect.Method)</span><br />
-    
-        
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath:&nbsp; //form[@method=&apos;post&apos;]//div[contains(.,&apos;Login was unsuccessful. Please correct the errors and try again.&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)</b></a><br />
-    <div class="stackTrace" id="exception-0">
-              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)<br />
-              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)<br />
-              commons.BasePage.waitForElementVisible(BasePage.java:545)<br />
-              com.nopcommerce.LoginPage.LoginPageObject.isErrorMessageInvalidEmailLine1Displayed(LoginPageObject.java:38)<br />
-              com.nopcommerce.LoginPage.Login_Page.Front_Login_With_The_Email_Does_Not_Exist(Login_Page.java:83)<br />
-              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.base/java.lang.reflect.Method.invoke(Method.java:566)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression&nbsp; //form[@method=&apos;post&apos;]//div[contains(.,&apos;Login was unsuccessful. Please correct the errors and try again.&apos;)]] because of the following error:<br/>
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos; //form[@method=&apos;post&apos;]//div[contains(.,&apos;Login was unsuccessful. Please correct the errors and try again.&apos;)]]&apos; is not a valid XPath expression.<br/>
-&nbsp; (Session info: chrome=116.0.5845.110)<br/>
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html<br/>
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
-System info: host: &apos;Edward&apos;, ip: &apos;fe80:0:0:0:1819:3b4e:3596:797f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;11.0.15.1&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.110, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/gm/wt6pjgb90bv...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60909}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
-Session ID: 7e5346f365eeddc62be52632ad316152<br/>
-*** Element info: {Using=xpath, value= //form[@method=&apos;post&apos;]//div[contains(.,&apos;Login was unsuccessful. Please correct the errors and try again.&apos;)]]}</a><br />
-        <div class="stackTrace" id="exception-1">
-                      jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)<br />
-                      java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-                      java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
-                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
-                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
-                      org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)<br />
-                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)<br />
-                      commons.BasePage.waitForElementVisible(BasePage.java:545)<br />
-                      com.nopcommerce.LoginPage.LoginPageObject.isErrorMessageInvalidEmailLine1Displayed(LoginPageObject.java:38)<br />
-                      com.nopcommerce.LoginPage.Login_Page.Front_Login_With_The_Email_Does_Not_Exist(Login_Page.java:83)<br />
-                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-                      java.base/java.lang.reflect.Method.invoke(Method.java:566)<br />
-                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-                      org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
-                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
-                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
-                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-                      org.testng.TestRunner.run(TestRunner.java:505)<br />
-                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-                      org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-                      org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-                      org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-                      org.testng.TestNG.run(TestNG.java:1017)<br />
-                      org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
-                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                  </div>
-          </div>
-      </td>
-</tr>
-      </table>
-
-  <table class="resultsTable" width="100%">
-    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">com.nopcommerce.LoginPage.Login_Page</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  Front_Login_Email_And_Input_Invalid_Password
-      </td>
-  <td class="duration">
-    0.000s
-  </td>
-  <td class="result">
-                             <i>Depends on method(s): </i>
-        <span class="dependency">com.nopcommerce.LoginPage.Login_Page.Front_Login_Email_Without_Inputting_Password</span>
-                
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  Front_Login_Email_Without_Inputting_Password
-      </td>
-  <td class="duration">
-    0.000s
-  </td>
-  <td class="result">
-                             <i>Depends on method(s): </i>
-        <span class="dependency">com.nopcommerce.LoginPage.Login_Page.Front_Login_With_The_Email_Does_Not_Exist</span>
-                
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  Front_Login_Success
-      </td>
-  <td class="duration">
-    0.000s
-  </td>
-  <td class="result">
-                             <i>Depends on method(s): </i>
-        <span class="dependency">com.nopcommerce.LoginPage.Login_Page.Front_Login_Email_And_Input_Invalid_Password</span>
-                
-    
-        
-
-      </td>
-</tr>
-      </table>
 
   <table class="resultsTable">
     <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
@@ -196,7 +30,7 @@ Session ID: 7e5346f365eeddc62be52632ad316152<br/>
                   Front_Open_Home_Page
       </td>
   <td class="duration">
-    6.011s
+    7.433s
   </td>
   <td class="result">
         
@@ -212,10 +46,55 @@ Session ID: 7e5346f365eeddc62be52632ad316152<br/>
             
 <tr>
   <td class="method">
+                  Front_Login_Email_And_Input_Invalid_Password
+      </td>
+  <td class="duration">
+    9.105s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.LoginPage.Login_Page.Front_Login_Email_And_Input_Invalid_Password(java.lang.reflect.Method)</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Front_Login_Email_Without_Inputting_Password
+      </td>
+  <td class="duration">
+    8.025s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.LoginPage.Login_Page.Front_Login_Email_Without_Inputting_Password(java.lang.reflect.Method)</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Front_Login_With_The_Email_Does_Not_Exist
+      </td>
+  <td class="duration">
+    7.747s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.LoginPage.Login_Page.Front_Login_With_The_Email_Does_Not_Exist(java.lang.reflect.Method)</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
                   Front_Login_With_The_Invalid_Email
       </td>
   <td class="duration">
-    4.049s
+    5.975s
   </td>
   <td class="result">
         
@@ -230,7 +109,7 @@ Session ID: 7e5346f365eeddc62be52632ad316152<br/>
                   Front_Login_Without_Inputting
       </td>
   <td class="duration">
-    3.319s
+    4.559s
   </td>
   <td class="result">
         
@@ -245,11 +124,45 @@ Session ID: 7e5346f365eeddc62be52632ad316152<br/>
                   Front_Open_Login_Page
       </td>
   <td class="duration">
-    1.652s
+    2.027s
   </td>
   <td class="result">
         
           <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.LoginPage.Login_Page.Front_Open_Login_Page(java.lang.reflect.Method)</span><br />
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.MyAccountPage.My_Account_Page</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  Front_Login_Without_Inputting
+      </td>
+  <td class="duration">
+    4.783s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.MyAccountPage.My_Account_Page.Front_Login_Without_Inputting(java.lang.reflect.Method)</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  My_Account_Login_Success
+      </td>
+  <td class="duration">
+    8.266s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.MyAccountPage.My_Account_Page.My_Account_Login_Success(java.lang.reflect.Method)</span><br />
     
         
 
@@ -264,7 +177,7 @@ Session ID: 7e5346f365eeddc62be52632ad316152<br/>
                   Front_Register_An_Account_With_The_Email_Has_Already_Registered
       </td>
   <td class="duration">
-    22.014s
+    26.094s
   </td>
   <td class="result">
         
@@ -279,7 +192,7 @@ Session ID: 7e5346f365eeddc62be52632ad316152<br/>
                   Front_Register_An_Account_With_The_Invalid_Information
       </td>
   <td class="duration">
-    21.387s
+    24.186s
   </td>
   <td class="result">
         
@@ -294,7 +207,7 @@ Session ID: 7e5346f365eeddc62be52632ad316152<br/>
                   Front_Register_An_Account_With_The_Valid_Information
       </td>
   <td class="duration">
-    16.097s
+    19.611s
   </td>
   <td class="result">
         

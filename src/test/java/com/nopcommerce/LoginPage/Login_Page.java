@@ -6,7 +6,6 @@ import static org.testng.Assert.assertTrue;
 import java.lang.reflect.Method;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -81,7 +80,7 @@ public class Login_Page extends BaseTest {
 		login_Page.clickOnLoginButton();
 		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 04: Verify Error Message When Email Does Not Exist In The System");
 		assertTrue(login_Page.isErrorMessageInvalidEmailLine1Displayed(GlobalConstantsLoginPage.getGlobalConstants().getErrorMessageInvalidData1()));
-		assertTrue(login_Page.isErrorMessageInvalidEmailLine2Displayed(GlobalConstantsLoginPage.getGlobalConstants().getErrorMessageInvalidData2()));
+		assertTrue(login_Page.isErrorMessageInvalidEmailLine2Displayed(GlobalConstantsLoginPage.getGlobalConstants().getErrorMessageEmailDoesNotExist()));
 	}
 	
 	@Test (groups = "Login Account", dependsOnMethods = "Front_Login_With_The_Email_Does_Not_Exist")
@@ -106,27 +105,8 @@ public class Login_Page extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 03: Click On The Login Button");
 		login_Page.clickOnLoginButton();
 		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 04: Verify Error Message Of The Email Textbox");
-		assertTrue(login_Page.isErrorMessageInvalidEmailLine1Displayed("test"));
-		assertTrue(login_Page.isErrorMessageInvalidEmailLine2Displayed("test"));
+		assertTrue(login_Page.isErrorMessageInvalidEmailLine1Displayed(GlobalConstantsLoginPage.getGlobalConstants().getErrorMessageInvalidData1()));
+		assertTrue(login_Page.isErrorMessageInvalidEmailLine2Displayed(GlobalConstantsLoginPage.getGlobalConstants().getErrorMessageInvalidData2()));
 	}
-	
-	@Test (groups = "Login Account", dependsOnMethods = "Front_Login_Email_And_Input_Invalid_Password")
-	public void Front_Login_Success(Method method) {
-		ExtentTestManager.startTest(method.getName(), "Login Account And Valid Password");
-		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 01: Input Email Address Existed");
-		login_Page.inputEmailAddress(emailAddress);
-		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 02: Input Valid Password");
-		login_Page.inputPassword(password);
-		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 03: Click On The Login Button");
-		login_Page.clickOnLoginButton();
-	}
-	
-	@Parameters({"browser"})
-	@AfterClass(alwaysRun = true)
-	public void afterClass(String browserName) {
-		ExtentTestManager.getTest().log(Status.INFO, "Close browser '" + browserName + "'");
-		closeBrowserAndDriver();
-	}
-
 }
 

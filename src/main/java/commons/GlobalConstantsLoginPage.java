@@ -35,10 +35,10 @@ public class GlobalConstantsLoginPage {
 	private final String registerURL = "https://demo.nopcommerce.com/register?returnUrl=%2F";
 	private final String invalidEmailFormat = "test.com";
 	private final String emailDoesNotExist = "test_ed@yop.com";
-	private final String invalidPassword = "Admin@123";
+	private final String invalidPassword = "Admin@123456";
 	private final String errorMessageEmptyData = "Please enter your email";
 	private final String errorMessageInvalidEmail = "Wrong email";
-	private final String errorMessageEmailDoesNotExist = "No customer account fount";
+	private final String errorMessageEmailDoesNotExist = "No customer account found";
 	private final String errorMessageInvalidData1 = "Login was unsuccessful. Please correct the errors and try again.";
 	private final String errorMessageInvalidData2 = "The credentials provided are incorrect";
 
