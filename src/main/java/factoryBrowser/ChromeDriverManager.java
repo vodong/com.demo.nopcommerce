@@ -14,7 +14,7 @@ public class ChromeDriverManager implements BrowserFactory {
 	@Override
 	public WebDriver getBrowserDriver() {
 		String driverExePath = System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver", driverExePath + "/browserDriver/chromedriver");
+		System.setProperty("webdriver.chrome.driver", driverExePath + "/browserDriver/chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.setExperimentalOption("useAutomationExtension", false);
 		options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));

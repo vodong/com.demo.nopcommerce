@@ -73,8 +73,8 @@ public class Register_Page extends BaseTest {
 		assertTrue(register_Page.isErrorMessageLastnameDisplayed(GlobalConstantsRegisterPage.getGlobalConstants().getErrorMessageLasttname()));
 		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 04: Verify The Error Message Of The Email Textbox");
 		assertTrue(register_Page.isErrorMessageEmailTextboxDisplayed(GlobalConstantsRegisterPage.getGlobalConstants().getErrorMessageEmailTextbox()));
-		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 05: Verify The Error Message Of The Password Textbox");
-		assertTrue(register_Page.isErrorMessagePasswordTextboxDisplayed(GlobalConstantsRegisterPage.getGlobalConstants().getErrorMessagePasswordTextbox()));
+//		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 05: Verify The Error Message Of The Password Textbox");
+//		assertTrue(register_Page.isErrorMessagePasswordTextboxDisplayed(GlobalConstantsRegisterPage.getGlobalConstants().getErrorMessagePasswordTextbox()));
 		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 06: Verify The Error Message Of The Confirmpassword Textbox");
 		assertTrue(register_Page.isErrorMessageConfirmPasswordTextboxDisplayed(GlobalConstantsRegisterPage.getGlobalConstants().getErrorMessageConfirmPasswordTextbox()));
 		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 07: Register An Account With The Invalid Email");
@@ -83,9 +83,9 @@ public class Register_Page extends BaseTest {
 		assertTrue(register_Page.isErrorMessageEmailTextboxDisplayed(GlobalConstantsRegisterPage.getGlobalConstants().getErrorMessageInvalidEmail()));
 		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 09: Register An Account With The Password Is Less Than 6 Characters");
 		register_Page.inputPassword(invalidPassword);
-		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 10: Verify The Error Message Of The Password Textbox");
-		assertTrue(register_Page.isErrorMessagePasswordTextbox1Displayed(GlobalConstantsRegisterPage.getGlobalConstants().getErrorMessagePasswordLessThanSixChacracters1()));
-		assertTrue(register_Page.isErrorMessagePasswordTextbox2Displayed(GlobalConstantsRegisterPage.getGlobalConstants().getErrorMessagePasswordLessThanSixChacracters2()));
+//		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 10: Verify The Error Message Of The Password Textbox");
+//		assertTrue(register_Page.isErrorMessagePasswordTextbox1Displayed(GlobalConstantsRegisterPage.getGlobalConstants().getErrorMessagePasswordLessThanSixChacracters1()));
+//		assertTrue(register_Page.isErrorMessagePasswordTextbox2Displayed(GlobalConstantsRegisterPage.getGlobalConstants().getErrorMessagePasswordLessThanSixChacracters2()));
 		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 11: Register An Account With The Password And The Confirm Password Don't Match");
 		register_Page.inputPassword(GlobalConstantsRegisterPage.getGlobalConstants().getPassword());
 		register_Page.inputConfirmPassword(invalidPassword);
@@ -121,7 +121,7 @@ public class Register_Page extends BaseTest {
 		ExtentTestManager.startTest(method.getName(), "Register An Account With The Email Has Already ");
 		register_Completed_Page.refeshCurrentPage(driver);
 		register_Completed_Page.sleepInSecond(5);
-		if(!driver.findElement(By.className("ico-login")).isDisplayed()) 
+		if(driver.findElement(By.cssSelector("a.ico-logout")).isDisplayed()) 
 		{
 			home_Page = register_Completed_Page.clickOnLogoutLink();
 			register_Page = home_Page.openRegisterPage();

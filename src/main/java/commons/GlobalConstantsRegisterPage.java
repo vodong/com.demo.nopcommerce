@@ -42,7 +42,7 @@ public class GlobalConstantsRegisterPage {
 	private final String errorMessageLasttname = "Last name is required.";
 	private final String errorMessageEmailAlreadyExist = "The specified email already exists";
 	private final String errorMessageEmailTextbox = "Email is required.";
-	private final String errorMessageInvalidEmail = "Wrong email";
+	private final String errorMessageInvalidEmail = "Please enter a valid email address.";
 	private final String errorMessagePasswordTextbox = "Password is required.";
 	private final String errorMessageConfirmPasswordTextbox = "Password is required.";
 	private final String errorMessagePasswordLessThanSixChacracters1 = "Password must meet the following rules:";

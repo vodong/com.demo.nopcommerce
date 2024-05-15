@@ -13,15 +13,15 @@
 	  
 	  	<test name="Run on Chrome">
 		<parameter name="browser" value="Chrome" />
-		<!-- <parameter name="ipAddress" value="localhost" />-->
-		<!-- <parameter name="portNumber" value="4444" />-->
-		<!-- <parameter name="osName" value="Windows" />-->
-		<!-- <parameter name="osVersion" value="10" />-->
+		<parameter name="ipAddress" value="localhost" />
+		<parameter name="portNumber" value="4444" />
+		<parameter name="osName" value="Windows" />
+		<parameter name="osVersion" value="10" />
 		<packages>
 			<package name="com.nopcommerce.HomePage" />
 			<package name="com.nopcommerce.RegisterPage" />
-			<package name="com.nopcommerce.LoginPage" />
-			<package name="com.nopcommerce.MyAccountPage" />
+			<package name="com.nopcommerce.LoginPage" /> 	
+			<package name="com.nopcommerce.MyAccountPage" /> 
 		</packages>
 	  </test>
 </suite>
