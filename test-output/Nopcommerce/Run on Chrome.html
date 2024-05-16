@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Run on Chrome</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>14/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed May 15 11:32:30 ICT 2024</td>
+<td>Started on:</td><td>Thu May 16 13:53:59 ICT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>139 seconds (139877 ms)</td>
+<tr><td>Total time:</td><td>186 seconds (186023 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,22 +75,22 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.nopcommerce.LoginPage.Login_Page.Front_Login_Email_And_Input_Invalid_Password()'><b>Front_Login_Email_And_Input_Invalid_Password</b><br>Test class: com.nopcommerce.LoginPage.Login_Page<br>Parameters: public void com.nopcommerce.LoginPage.Login_Page.Front_Login_Email_And_Input_Invalid_Password(java.lang.reflect.Method)</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath:  //form[@method=&apos;post&apos;]//div//li[contains(.,&apos;No customer account found&apos;)] (tried for 30 second(s) with 500 milliseconds interval)
+<td title='com.nopcommerce.MyAccountPage.My_Account_Page.My_Account_Login_After_Updating_Password()'><b>My_Account_Login_After_Updating_Password</b><br>Test class: com.nopcommerce.MyAccountPage.My_Account_Page<br>Parameters: public void com.nopcommerce.MyAccountPage.My_Account_Page.My_Account_Login_After_Updating_Password(java.lang.reflect.Method)</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath:  //div[@class=&apos;header-links&apos;]//a[@class=&apos;ico-account&apos;] (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at commons.BasePage.waitForElementVisible(BasePage.java:545)
-	at com.nopcommerce.LoginPage.LoginPageObject.isErrorMessageInvalidEmailLine2Displayed(LoginPageObject.java:47)
-	at com.nopcommerce.LoginPage.Login_Page.Front_Login_Email_And_Input_Invalid_Password(Login_Page.java:109)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot; //form[@method=&apos;post&apos;]//div//li[contains(.,&apos;No customer account found&apos;)]&quot;}
-  (Session info: chrome=124.0.6367.201)
+	at commons.BasePage.waitForElementVisible(BasePage.java:540)
+	at com.nopcommerce.HomePage.HomePageObject.isMyAccountLinkDisplayed(HomePageObject.java:47)
+	at com.nopcommerce.MyAccountPage.My_Account_Page.My_Account_Login_After_Updating_Password(My_Account_Page.java:183)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot; //div[@class=&apos;header-links&apos;]//a[@class=&apos;ico-account&apos;]&quot;}
+  (Session info: chrome=124.0.6367.207)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-R1KVHLO&apos;, ip: &apos;172.27.224.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\VODONG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56933}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f83ad7b5a9d1c84034b9c3427dcfb0fa
-*** Element info: {Using=xpath, value= //form[@method=&apos;post&apos;]//div//li[contains(.,&apos;No customer account found&apos;)]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.207, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\VODONG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61308}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9771450990ae7efbfab10b2f5f9733dd
+*** Element info: {Using=xpath, value= //div[@class=&apos;header-links&apos;]//a[@class=&apos;ico-account&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -105,13 +105,13 @@ Session ID: f83ad7b5a9d1c84034b9c3427dcfb0fa
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 28 more
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace152217156", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace152217156'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath:  //form[@method=&apos;post&apos;]//div//li[contains(.,&apos;No customer account found&apos;)] (tried for 30 second(s) with 500 milliseconds interval)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1795569369", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1795569369'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath:  //div[@class=&apos;header-links&apos;]//a[@class=&apos;ico-account&apos;] (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at commons.BasePage.waitForElementVisible(BasePage.java:545)
-	at com.nopcommerce.LoginPage.LoginPageObject.isErrorMessageInvalidEmailLine2Displayed(LoginPageObject.java:47)
-	at com.nopcommerce.LoginPage.Login_Page.Front_Login_Email_And_Input_Invalid_Password(Login_Page.java:109)
+	at commons.BasePage.waitForElementVisible(BasePage.java:540)
+	at com.nopcommerce.HomePage.HomePageObject.isMyAccountLinkDisplayed(HomePageObject.java:47)
+	at com.nopcommerce.MyAccountPage.My_Account_Page.My_Account_Login_After_Updating_Password(My_Account_Page.java:183)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -137,15 +137,15 @@ Session ID: f83ad7b5a9d1c84034b9c3427dcfb0fa
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot; //form[@method=&apos;post&apos;]//div//li[contains(.,&apos;No customer account found&apos;)]&quot;}
-  (Session info: chrome=124.0.6367.201)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot; //div[@class=&apos;header-links&apos;]//a[@class=&apos;ico-account&apos;]&quot;}
+  (Session info: chrome=124.0.6367.207)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-R1KVHLO&apos;, ip: &apos;172.27.224.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\VODONG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56933}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f83ad7b5a9d1c84034b9c3427dcfb0fa
-*** Element info: {Using=xpath, value= //form[@method=&apos;post&apos;]//div//li[contains(.,&apos;No customer account found&apos;)]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.207, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\VODONG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61308}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9771450990ae7efbfab10b2f5f9733dd
+*** Element info: {Using=xpath, value= //div[@class=&apos;header-links&apos;]//a[@class=&apos;ico-account&apos;]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -166,8 +166,8 @@ Session ID: f83ad7b5a9d1c84034b9c3427dcfb0fa
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 28 more
 </pre></div></td>
-<td>39</td>
-<td>com.nopcommerce.LoginPage.Login_Page@62628e78</td></tr>
+<td>50</td>
+<td>com.nopcommerce.MyAccountPage.My_Account_Page@a137d7a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -177,65 +177,75 @@ Session ID: f83ad7b5a9d1c84034b9c3427dcfb0fa
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.nopcommerce.LoginPage.Login_Page.Front_Login_Email_And_Input_Invalid_Password()'><b>Front_Login_Email_And_Input_Invalid_Password</b><br>Test class: com.nopcommerce.LoginPage.Login_Page<br>Parameters: public void com.nopcommerce.LoginPage.Login_Page.Front_Login_Email_And_Input_Invalid_Password(java.lang.reflect.Method)</td>
+<td></td>
+<td>7</td>
+<td>com.nopcommerce.LoginPage.Login_Page@58e85c6f</td></tr>
+<tr>
 <td title='com.nopcommerce.LoginPage.Login_Page.Front_Login_Email_Without_Inputting_Password()'><b>Front_Login_Email_Without_Inputting_Password</b><br>Test class: com.nopcommerce.LoginPage.Login_Page<br>Parameters: public void com.nopcommerce.LoginPage.Login_Page.Front_Login_Email_Without_Inputting_Password(java.lang.reflect.Method)</td>
 <td></td>
 <td>6</td>
-<td>com.nopcommerce.LoginPage.Login_Page@62628e78</td></tr>
+<td>com.nopcommerce.LoginPage.Login_Page@58e85c6f</td></tr>
 <tr>
 <td title='com.nopcommerce.LoginPage.Login_Page.Front_Login_With_The_Email_Does_Not_Exist()'><b>Front_Login_With_The_Email_Does_Not_Exist</b><br>Test class: com.nopcommerce.LoginPage.Login_Page<br>Parameters: public void com.nopcommerce.LoginPage.Login_Page.Front_Login_With_The_Email_Does_Not_Exist(java.lang.reflect.Method)</td>
 <td></td>
 <td>6</td>
-<td>com.nopcommerce.LoginPage.Login_Page@62628e78</td></tr>
+<td>com.nopcommerce.LoginPage.Login_Page@58e85c6f</td></tr>
 <tr>
 <td title='com.nopcommerce.LoginPage.Login_Page.Front_Login_With_The_Invalid_Email()'><b>Front_Login_With_The_Invalid_Email</b><br>Test class: com.nopcommerce.LoginPage.Login_Page<br>Parameters: public void com.nopcommerce.LoginPage.Login_Page.Front_Login_With_The_Invalid_Email(java.lang.reflect.Method)</td>
 <td></td>
 <td>5</td>
-<td>com.nopcommerce.LoginPage.Login_Page@62628e78</td></tr>
+<td>com.nopcommerce.LoginPage.Login_Page@58e85c6f</td></tr>
 <tr>
 <td title='com.nopcommerce.LoginPage.Login_Page.Front_Login_Without_Inputting()'><b>Front_Login_Without_Inputting</b><br>Test class: com.nopcommerce.LoginPage.Login_Page<br>Parameters: public void com.nopcommerce.LoginPage.Login_Page.Front_Login_Without_Inputting(java.lang.reflect.Method)</td>
 <td></td>
 <td>4</td>
-<td>com.nopcommerce.LoginPage.Login_Page@62628e78</td></tr>
+<td>com.nopcommerce.LoginPage.Login_Page@58e85c6f</td></tr>
 <tr>
 <td title='com.nopcommerce.HomePage.Home_Page.Front_Open_Home_Page()'><b>Front_Open_Home_Page</b><br>Test class: com.nopcommerce.HomePage.Home_Page<br>Parameters: public void com.nopcommerce.HomePage.Home_Page.Front_Open_Home_Page(java.lang.reflect.Method)</td>
 <td></td>
-<td>3</td>
-<td>com.nopcommerce.HomePage.Home_Page@20749d9</td></tr>
+<td>4</td>
+<td>com.nopcommerce.HomePage.Home_Page@4ab550d5</td></tr>
 <tr>
 <td title='com.nopcommerce.LoginPage.Login_Page.Front_Open_Login_Page()'><b>Front_Open_Login_Page</b><br>Test class: com.nopcommerce.LoginPage.Login_Page<br>Parameters: public void com.nopcommerce.LoginPage.Login_Page.Front_Open_Login_Page(java.lang.reflect.Method)</td>
 <td></td>
 <td>1</td>
-<td>com.nopcommerce.LoginPage.Login_Page@62628e78</td></tr>
+<td>com.nopcommerce.LoginPage.Login_Page@58e85c6f</td></tr>
 <tr>
 <td title='com.nopcommerce.RegisterPage.Register_Page.Front_Register_An_Account_With_The_Email_Has_Already_Registered()'><b>Front_Register_An_Account_With_The_Email_Has_Already_Registered</b><br>Test class: com.nopcommerce.RegisterPage.Register_Page<br>Parameters: public void com.nopcommerce.RegisterPage.Register_Page.Front_Register_An_Account_With_The_Email_Has_Already_Registered(java.lang.reflect.Method)</td>
 <td></td>
 <td>23</td>
-<td>com.nopcommerce.RegisterPage.Register_Page@de77232</td></tr>
+<td>com.nopcommerce.RegisterPage.Register_Page@3cd206b5</td></tr>
 <tr>
 <td title='com.nopcommerce.RegisterPage.Register_Page.Front_Register_An_Account_With_The_Invalid_Information()'><b>Front_Register_An_Account_With_The_Invalid_Information</b><br>Test class: com.nopcommerce.RegisterPage.Register_Page<br>Parameters: public void com.nopcommerce.RegisterPage.Register_Page.Front_Register_An_Account_With_The_Invalid_Information(java.lang.reflect.Method)</td>
 <td></td>
 <td>13</td>
-<td>com.nopcommerce.RegisterPage.Register_Page@de77232</td></tr>
+<td>com.nopcommerce.RegisterPage.Register_Page@3cd206b5</td></tr>
 <tr>
 <td title='com.nopcommerce.RegisterPage.Register_Page.Front_Register_An_Account_With_The_Valid_Information()'><b>Front_Register_An_Account_With_The_Valid_Information</b><br>Test class: com.nopcommerce.RegisterPage.Register_Page<br>Parameters: public void com.nopcommerce.RegisterPage.Register_Page.Front_Register_An_Account_With_The_Valid_Information(java.lang.reflect.Method)</td>
 <td></td>
 <td>12</td>
-<td>com.nopcommerce.RegisterPage.Register_Page@de77232</td></tr>
+<td>com.nopcommerce.RegisterPage.Register_Page@3cd206b5</td></tr>
 <tr>
 <td title='com.nopcommerce.MyAccountPage.My_Account_Page.My_Account_Add_Address()'><b>My_Account_Add_Address</b><br>Test class: com.nopcommerce.MyAccountPage.My_Account_Page<br>Parameters: public void com.nopcommerce.MyAccountPage.My_Account_Page.My_Account_Add_Address(java.lang.reflect.Method)</td>
 <td></td>
-<td>0</td>
-<td>com.nopcommerce.MyAccountPage.My_Account_Page@44841b43</td></tr>
+<td>17</td>
+<td>com.nopcommerce.MyAccountPage.My_Account_Page@a137d7a</td></tr>
+<tr>
+<td title='com.nopcommerce.MyAccountPage.My_Account_Page.My_Account_Change_Password()'><b>My_Account_Change_Password</b><br>Test class: com.nopcommerce.MyAccountPage.My_Account_Page<br>Parameters: public void com.nopcommerce.MyAccountPage.My_Account_Page.My_Account_Change_Password(java.lang.reflect.Method)</td>
+<td></td>
+<td>8</td>
+<td>com.nopcommerce.MyAccountPage.My_Account_Page@a137d7a</td></tr>
 <tr>
 <td title='com.nopcommerce.MyAccountPage.My_Account_Page.My_Account_Login_Success()'><b>My_Account_Login_Success</b><br>Test class: com.nopcommerce.MyAccountPage.My_Account_Page<br>Parameters: public void com.nopcommerce.MyAccountPage.My_Account_Page.My_Account_Login_Success(java.lang.reflect.Method)</td>
 <td></td>
-<td>6</td>
-<td>com.nopcommerce.MyAccountPage.My_Account_Page@44841b43</td></tr>
+<td>5</td>
+<td>com.nopcommerce.MyAccountPage.My_Account_Page@a137d7a</td></tr>
 <tr>
 <td title='com.nopcommerce.MyAccountPage.My_Account_Page.My_Account_Update_Customer_Information()'><b>My_Account_Update_Customer_Information</b><br>Test class: com.nopcommerce.MyAccountPage.My_Account_Page<br>Parameters: public void com.nopcommerce.MyAccountPage.My_Account_Page.My_Account_Update_Customer_Information(java.lang.reflect.Method)</td>
 <td></td>
-<td>13</td>
-<td>com.nopcommerce.MyAccountPage.My_Account_Page@44841b43</td></tr>
+<td>14</td>
+<td>com.nopcommerce.MyAccountPage.My_Account_Page@a137d7a</td></tr>
 </table><p>
 </body>
 </html>

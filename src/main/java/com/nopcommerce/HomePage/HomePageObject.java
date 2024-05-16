@@ -53,5 +53,12 @@ public class HomePageObject extends BasePage {
 		clickToElement(driver, FrontHomePageUI.MYACOUNT_LINK);
 		return PageGeneratorManager.getMyAccountPage(driver);
 	}
+
+	public LoginPageObject clickOnLoginLink() {
+		waitForElementClickable(driver, FrontHomePageUI.LOGIN_LINK);
+		clickToElement(driver, FrontHomePageUI.LOGIN_LINK);
+		sleepInSecond(ShortTime);
+		return PageGeneratorManager.getLoginpage(driver);
+	}
 }
 

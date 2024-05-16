@@ -4,12 +4,12 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="49.925">
+           time="49.863">
   <properties />
   
   
-            <testcase name="Front_Register_An_Account_With_The_Email_Has_Already_Registered" time="23.510" classname="com.nopcommerce.RegisterPage.Register_Page" />
-                <testcase name="Front_Register_An_Account_With_The_Invalid_Information" time="13.953" classname="com.nopcommerce.RegisterPage.Register_Page" />
-                <testcase name="Front_Register_An_Account_With_The_Valid_Information" time="12.462" classname="com.nopcommerce.RegisterPage.Register_Page" />
+            <testcase name="Front_Register_An_Account_With_The_Email_Has_Already_Registered" time="23.444" classname="com.nopcommerce.RegisterPage.Register_Page" />
+                <testcase name="Front_Register_An_Account_With_The_Valid_Information" time="12.451" classname="com.nopcommerce.RegisterPage.Register_Page" />
+                <testcase name="Front_Register_An_Account_With_The_Invalid_Information" time="13.968" classname="com.nopcommerce.RegisterPage.Register_Page" />
       
 </testsuite>

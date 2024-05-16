@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import com.nopcommerce.HomePage.HomePageObject;
 import com.nopcommerce.LoginPage.LoginPageObject;
 import com.nopcommerce.MyAccountPage.MyAccountPageObject;
+import com.nopcommerce.MyAddressPage.MyAddressPageObject;
+import com.nopcommerce.MyPasswordsPage.copy.MyPasswordPageObject;
 import com.nopcommerce.RegisterCompletedPage.RegisterCompletedPageObject;
 import com.nopcommerce.RegisterPage.RegisterPageObject;
 
@@ -29,6 +31,14 @@ public class PageGeneratorManager {
 
 	public static MyAccountPageObject getMyAccountPage(WebDriver driver) {
 		return new MyAccountPageObject(driver);
+	}
+
+	public static MyAddressPageObject getMyAddressPageObject(WebDriver driver) {
+		return new MyAddressPageObject(driver);
+	}
+	
+	public static MyPasswordPageObject getMyPasswordPageObject(WebDriver driver) {
+		return new MyPasswordPageObject(driver);
 	}
 
 }

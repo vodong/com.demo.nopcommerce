@@ -39,4 +39,8 @@ public class GlobalConstantsMyAccountPage {
 	private final String browserAutomateKey = "idztyWmBznShx8tLvKAe";
 	private final String browserStackUrl = "https://" + browserUserName + ":" + browserAutomateKey
 			+ "@hub-cloud.browserstack.com/wd/hub";
+	
+	private final String messageUpdateSuccessfulllyDisplayed = "The customer info has been updated successfully.";
+	private final String addressLink = "Addresses";
+	private final String changePasswordLink = "Change password";
 }

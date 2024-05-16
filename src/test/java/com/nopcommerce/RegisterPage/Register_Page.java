@@ -142,6 +142,7 @@ public class Register_Page extends BaseTest {
 			register_Page.inputEmailAddress(emailAddress);
 		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 7: Input Password More Than 6 Characters");
 			register_Page.inputPassword(GlobalConstantsRegisterPage.getGlobalConstants().getPassword());
+			PropertiesHelper.setValue("password", GlobalConstantsRegisterPage.getGlobalConstants().getPassword());
 		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 8: Input Confirm Password Match The Password");
 			register_Page.inputConfirmPassword(GlobalConstantsRegisterPage.getGlobalConstants().getPassword());
 		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 9: Click On The Register Button");

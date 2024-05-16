@@ -2,6 +2,7 @@ package com.nopcommerce.MyAccountPage;
 
 import org.openqa.selenium.WebDriver;
 
+import com.nopcommerce.MyAddressPage.MyAddressPageObject;
 import com.nopcommerce.RegisterPage.RegisterPageObject;
 
 import commons.BasePage;
@@ -63,5 +64,17 @@ public class MyAccountPageObject extends BasePage {
 		waitForElementClickable(driver, MyAccountPageUI.SAVE_BUTTON);
 		clickToElement(driver, MyAccountPageUI.SAVE_BUTTON);
 	}
+
+	public boolean isMessageUpdateSuccessfulllyDisplayed(String messageUpdateSuccessfulllyDisplayed) {
+		waitForElementVisible(driver, MyAccountPageUI.BAR_NOTIFICATION, messageUpdateSuccessfulllyDisplayed);
+		return isElementDisplayed(driver, MyAccountPageUI.BAR_NOTIFICATION, messageUpdateSuccessfulllyDisplayed);
+	}
+
+	public MyAddressPageObject clickOnAddressesLink(String addressLink) {
+		waitForElementClickable(driver, MyAccountPageUI.ADDRESS_LINK, addressLink);
+		clickToElement(driver, MyAccountPageUI.ADDRESS_LINK, addressLink);
+		return PageGeneratorManager.getMyAddressPageObject(driver); 
+	}
+
 }
 
