@@ -183,7 +183,6 @@ public class My_Account_Page extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Info Page - Step 10: Verify The Customer Can Login Successfully");
 		assertEquals(home_Page.isMyAccountLinkDisplayed(driver),"My account");
 		myAccount_Page = home_Page.clickonMyAccountLink();
-//		assertTrue(myAddress_Page.isMessageUpdatPasswordSuccessfulllyDisplayed(GlobalConstantsMyAddressPage.getGlobalConstants().getMessageUpdatePasswordSuccessfulllyDisplayed()));
 	}
 	
 
