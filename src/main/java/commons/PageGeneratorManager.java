@@ -7,6 +7,10 @@ import com.nopcommerce.LoginPage.LoginPageObject;
 import com.nopcommerce.MyAccountPage.MyAccountPageObject;
 import com.nopcommerce.MyAddressPage.MyAddressPageObject;
 import com.nopcommerce.MyPasswordsPage.copy.MyPasswordPageObject;
+import com.nopcommerce.MyProductReviewPage.MyProductReviewPageObject;
+import com.nopcommerce.ProductCategoryPage.ProductCategoryPageObject;
+import com.nopcommerce.ProductDetailPage.ProductDetailPageObject;
+import com.nopcommerce.ProductListPage.ProductListPageObject;
 import com.nopcommerce.RegisterCompletedPage.RegisterCompletedPageObject;
 import com.nopcommerce.RegisterPage.RegisterPageObject;
 
@@ -39,6 +43,22 @@ public class PageGeneratorManager {
 	
 	public static MyPasswordPageObject getMyPasswordPageObject(WebDriver driver) {
 		return new MyPasswordPageObject(driver);
+	}
+	
+	public static ProductCategoryPageObject getProductCategoryPageObject(WebDriver driver) {
+		return new ProductCategoryPageObject(driver);
+	}
+	
+	public static ProductListPageObject getProductListPageObject(WebDriver driver) {
+		return new ProductListPageObject(driver);
+	}
+	
+	public static ProductDetailPageObject getProductDetailPageObject(WebDriver driver) {
+		return new ProductDetailPageObject(driver);
+	}
+	
+	public static MyProductReviewPageObject getMyProductReviewList(WebDriver driver) {
+		return new MyProductReviewPageObject(driver);
 	}
 
 }

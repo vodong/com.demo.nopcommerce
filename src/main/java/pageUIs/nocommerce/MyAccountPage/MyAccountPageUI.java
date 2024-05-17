@@ -12,4 +12,6 @@ public class MyAccountPageUI {
 	public static final String SAVE_BUTTON = "XPATH= //button[@id='save-info-button']";
 	public static final String BAR_NOTIFICATION = "XPATH= //div[@id='bar-notification']//p[contains(.,'%s')]";
 	public static final String ADDRESS_LINK = "XPATH= //div[@class='listbox']//a[contains(.,'%s')]";
+	public static final String MY_PRODUCT_REVIEWS = "XPATH= //div[@class='listbox']//a[contains(.,'%s')]";
+	public static final String PRODUCT_REVIEW_NAME = "XPATH= //div[@class='review-info']//a[contains(.,'%s')]";
 }

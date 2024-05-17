@@ -16,11 +16,17 @@ import com.nopcommerce.HomePage.HomePageObject;
 import com.nopcommerce.LoginPage.LoginPageObject;
 import com.nopcommerce.MyAddressPage.MyAddressPageObject;
 import com.nopcommerce.MyPasswordsPage.copy.MyPasswordPageObject;
+import com.nopcommerce.MyProductReviewPage.MyProductReviewPageObject;
+import com.nopcommerce.ProductCategoryPage.ProductCategoryPageObject;
+import com.nopcommerce.ProductDetailPage.ProductDetailPageObject;
+import com.nopcommerce.ProductListPage.ProductListPageObject;
 
 import commons.BaseTest;
 import commons.GlobalConstantsLoginPage;
 import commons.GlobalConstantsMyAccountPage;
 import commons.GlobalConstantsMyAddressPage;
+import commons.GlobalConstantsProductDetailPage;
+import commons.GlobalConstantsProductlistPage;
 import commons.PageGeneratorManager;
 import environmentConfig.Environment;
 import helpers.PropertiesHelper;
@@ -33,8 +39,11 @@ public class My_Account_Page extends BaseTest {
 	MyPasswordPageObject myPassword_Page;
 	HomePageObject home_Page;
 	LoginPageObject login_Page;
-	String getCurrentUrl;
-	String emailAddress, password, fristname, lastname, emailAddress1, new_password;
+	MyProductReviewPageObject my_product_review_page;
+	ProductCategoryPageObject category_Page;
+	ProductListPageObject product_List_Page;
+	ProductDetailPageObject product_Detail_Page;
+	String emailAddress, password, fristname, lastname, emailAddress1, new_password, product_Title, getCurrentUrl;
 
 	Environment environment;
 
@@ -161,31 +170,64 @@ public class My_Account_Page extends BaseTest {
 		ExtentTestManager.startTest(method.getName(), "Logout And Login Account After Changing Password");
 		ExtentTestManager.getTest().log(Status.INFO, "My Account - Change Password Page - Step 01: Click On Logout Link On Header");
 		home_Page = myPassword_Page.clickOnLogoutLink();
-		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Address Page - Step 02: Open Login Page");
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Change Password Page - Step 02: Open Login Page");
 		login_Page = home_Page.clickOnLoginLink();
-		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Address Page - Step 03: Input Email Address");
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Change Password Page - Step 03: Input Email Address");
 		login_Page.inputEmailAddress(emailAddress1);
-		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Address Page - Step 04: Input The Old Password");
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Change Password Page - Step 04: Input The Old Password");
 		login_Page.inputPassword("123456");
-		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Address Page - Step 05: Click On Login Button");
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Change Password Page - Step 05: Click On Login Button");
 		login_Page.clickOnLoginButton();
-		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Address Page - Step 06: Verify Message When Login With The Old Password");
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Change Password Page - Step 06: Verify Message When Login With The Old Password");
 		assertTrue(login_Page.isErrorMessageInvalidEmailLine1Displayed(GlobalConstantsLoginPage.getGlobalConstants().getErrorMessageInvalidData1()));
 		assertTrue(login_Page.isErrorMessageInvalidEmailLine2Displayed(GlobalConstantsLoginPage.getGlobalConstants().getErrorMessageInvalidData2()));
-		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Address Page - Step 07: Input Email Address");
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Change Password Page - Step 07: Input Email Address");
 		login_Page.inputEmailAddress(emailAddress1);
-		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Address Page - Step 08: Input The New Password Has Been Changed");
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Change Password Page - Step 08: Input The New Password Has Been Changed");
 		PropertiesHelper.loadAllFiles();
 		new_password = PropertiesHelper.getValue("password");
 		login_Page.inputPassword(new_password);
-		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Address Page - Step 09: Click On Login Button");
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Change Password Page - Step 09: Click On Login Button");
 		home_Page = login_Page.clickOnLoginButton();
 		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Info Page - Step 10: Verify The Customer Can Login Successfully");
 		assertEquals(home_Page.isMyAccountLinkDisplayed(driver),"My account");
 		myAccount_Page = home_Page.clickonMyAccountLink();
 	}
 	
-
+	
+	@Test (groups = "My Account", dependsOnMethods = "My_Account_Login_After_Updating_Password")
+	public void My_Account_My_Product_Reiews(Method method) {
+		ExtentTestManager.startTest(method.getName(), "Review Product");
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Review Product Page - Step 01: Click On The Product Category");
+		category_Page = myAccount_Page.clickOnProductCategory(GlobalConstantsMyAccountPage.getGlobalConstants().getProductCategoryLink());
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Review Product Page - Step 03: Open The Product List Page");
+		product_List_Page = category_Page.clickOnProductListCategory(GlobalConstantsProductlistPage.getGlobalConstants().getNameProductCategoryList());
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Review Product Page - Step 04: Open The Product Detail Page");
+		product_Detail_Page = product_List_Page.clickOnProduct(GlobalConstantsProductlistPage.getGlobalConstants().getProductName());
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Review Product Page - Step 05: Click On The Add Your Review Link");
+		product_Title = product_Detail_Page.getProductTitle();
+		product_Detail_Page.clickOnAddYourReviewLink(GlobalConstantsProductlistPage.getGlobalConstants().getAddYourReviewLink());
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Review Product Page - Step 06: Input Review Title");
+		product_Detail_Page.inputReviewTitle(GlobalConstantsProductlistPage.getGlobalConstants().getReviewTitleContent());
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Review Product Page - Step 07: Input Review Text");
+		product_Detail_Page.inputReviewText(GlobalConstantsProductlistPage.getGlobalConstants().getReviewTextContent());
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Review Product Page - Step 08: Select Rating");
+		product_Detail_Page.selectRating(GlobalConstantsProductlistPage.getGlobalConstants().getRatingOption());
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Review Product Page - Step 09: Click On Submit Review Button");
+		product_Detail_Page.clickOnSubmitReviewButton();
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Info Page - Step 10: Verify The Message After Submitting Review");
+		assertTrue(product_Detail_Page.isMessageProductReviewIsSuccessfullyDisplayed(GlobalConstantsProductDetailPage.getGlobalConstants().getMessageProductReviewIsSuccessfullyDisplayed()));
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Info Page - Step 10: Close The Message Notify");
+		product_Detail_Page.clickOnTheCloseButton();
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Info Page - Step 10: Open My Account Page");
+		myAccount_Page = product_Detail_Page.clickonMyAccountLink();
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Info Page - Step 10: Open My Product Reviews Page");
+		my_product_review_page = myAccount_Page.clickOnMyProductReviewLink(GlobalConstantsMyAccountPage.getGlobalConstants().getMyProductReviewLink());
+		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Info Page - Step 10: Verify The Product Title");
+		assertTrue(myAccount_Page.isProductReviewNameDisplay(product_Title));
+	}
+	
+	
 	@Parameters({"browser"})
 	@AfterClass(alwaysRun = true)
 	public void afterClass(String browserName) {

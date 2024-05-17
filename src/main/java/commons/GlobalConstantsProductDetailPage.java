@@ -5,12 +5,12 @@ import java.io.File;
 import lombok.Getter;
 
 @Getter
-public class GlobalConstantsMyAccountPage {
-	private static GlobalConstantsMyAccountPage globalInstance;
+public class GlobalConstantsProductDetailPage {
+	private static GlobalConstantsProductDetailPage globalInstance;
 
-	public static synchronized GlobalConstantsMyAccountPage getGlobalConstants() {
+	public static synchronized GlobalConstantsProductDetailPage getGlobalConstants() {
 		if (globalInstance == null) {
-			globalInstance = new GlobalConstantsMyAccountPage();
+			globalInstance = new GlobalConstantsProductDetailPage();
 		}
 		return globalInstance;
 	}
@@ -40,9 +40,5 @@ public class GlobalConstantsMyAccountPage {
 	private final String browserStackUrl = "https://" + browserUserName + ":" + browserAutomateKey
 			+ "@hub-cloud.browserstack.com/wd/hub";
 	
-	private final String messageUpdateSuccessfulllyDisplayed = "The customer info has been updated successfully.";
-	private final String addressLink = "Addresses";
-	private final String changePasswordLink = "Change password";
-	private final String myProductReviewLink = "My product reviews";
-	private final String productCategoryLink = "Computers";
+	private final String messageProductReviewIsSuccessfullyDisplayed = "Product review is successfully added.";
 }

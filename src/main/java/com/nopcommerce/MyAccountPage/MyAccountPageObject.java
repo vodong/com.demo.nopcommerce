@@ -3,6 +3,8 @@ package com.nopcommerce.MyAccountPage;
 import org.openqa.selenium.WebDriver;
 
 import com.nopcommerce.MyAddressPage.MyAddressPageObject;
+import com.nopcommerce.MyProductReviewPage.MyProductReviewPageObject;
+import com.nopcommerce.ProductCategoryPage.ProductCategoryPageObject;
 import com.nopcommerce.RegisterPage.RegisterPageObject;
 
 import commons.BasePage;
@@ -10,6 +12,7 @@ import commons.GlobalConstants;
 import commons.PageGeneratorManager;
 import pageUIs.nocommerce.LoginPage.FrontLoginPageUI;
 import pageUIs.nocommerce.MyAccountPage.MyAccountPageUI;
+import pageUIs.nocommerce.ProductPageUI.ProductPageUI;
 import pageUIs.nocommerce.RegisterPage.RegisterPageUI;
 
 public class MyAccountPageObject extends BasePage {
@@ -74,6 +77,23 @@ public class MyAccountPageObject extends BasePage {
 		waitForElementClickable(driver, MyAccountPageUI.ADDRESS_LINK, addressLink);
 		clickToElement(driver, MyAccountPageUI.ADDRESS_LINK, addressLink);
 		return PageGeneratorManager.getMyAddressPageObject(driver); 
+	}
+
+	public ProductCategoryPageObject clickOnProductCategory(String productCategoryLink) {
+		waitForElementClickable(driver, ProductPageUI.PRODUCT_CATEGORY, productCategoryLink);
+		clickToElement(driver, ProductPageUI.PRODUCT_CATEGORY, productCategoryLink);
+		return PageGeneratorManager.getProductCategoryPageObject(driver);
+	}
+
+	public MyProductReviewPageObject clickOnMyProductReviewLink(String myProductReviewLink) {
+		waitForElementVisible(driver, MyAccountPageUI.MY_PRODUCT_REVIEWS, myProductReviewLink);
+		clickToElement(driver, MyAccountPageUI.MY_PRODUCT_REVIEWS, myProductReviewLink);
+		return PageGeneratorManager.getMyProductReviewList(driver);
+	}
+
+	public boolean isProductReviewNameDisplay(String product_Title) {
+		waitForElementVisible(driver, MyAccountPageUI.PRODUCT_REVIEW_NAME, product_Title);
+		return isElementDisplayed(driver, MyAccountPageUI.PRODUCT_REVIEW_NAME, product_Title);
 	}
 
 }
