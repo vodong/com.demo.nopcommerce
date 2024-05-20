@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import com.nopcommerce.LoginPage.LoginPageObject;
 import com.nopcommerce.MyAccountPage.MyAccountPageObject;
 import com.nopcommerce.RegisterPage.RegisterPageObject;
+import com.nopcommerce.SearchPage.SearchPageObject;
 
 import commons.BasePage;
 import commons.GlobalConstants;
@@ -59,6 +60,13 @@ public class HomePageObject extends BasePage {
 		clickToElement(driver, FrontHomePageUI.LOGIN_LINK);
 		sleepInSecond(ShortTime);
 		return PageGeneratorManager.getLoginpage(driver);
+	}
+
+	public SearchPageObject clickOnSearchLinkAtFooter() {
+		waitForElementClickable(driver, FrontHomePageUI.SEARCH_LINK_FOOTER);
+		clickToElement(driver, FrontHomePageUI.SEARCH_LINK_FOOTER);
+		sleepInSecond(ShortTime);
+		return PageGeneratorManager.getSearchPage(driver);
 	}
 }
 

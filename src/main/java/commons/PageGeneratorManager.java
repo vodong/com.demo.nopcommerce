@@ -13,6 +13,7 @@ import com.nopcommerce.ProductDetailPage.ProductDetailPageObject;
 import com.nopcommerce.ProductListPage.ProductListPageObject;
 import com.nopcommerce.RegisterCompletedPage.RegisterCompletedPageObject;
 import com.nopcommerce.RegisterPage.RegisterPageObject;
+import com.nopcommerce.SearchPage.SearchPageObject;
 
 
 public class PageGeneratorManager {
@@ -60,5 +61,8 @@ public class PageGeneratorManager {
 	public static MyProductReviewPageObject getMyProductReviewList(WebDriver driver) {
 		return new MyProductReviewPageObject(driver);
 	}
-
+	
+	public static SearchPageObject getSearchPage(WebDriver driver) {
+		return new SearchPageObject(driver);
+	}
 }

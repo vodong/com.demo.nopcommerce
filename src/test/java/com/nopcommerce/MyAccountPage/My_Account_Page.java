@@ -59,10 +59,7 @@ public class My_Account_Page extends BaseTest {
 		login_Page = PageGeneratorManager.getLoginpage(driver);
 		PropertiesHelper.loadAllFiles();
 		emailAddress = PropertiesHelper.getValue("email");
-		emailAddress1 =  "Automation_Team" + generateNumber() + "@yopmail.com";
 		password = PropertiesHelper.getValue("password");
-		fristname =  "Edward" + generateNumber();
-		lastname =  "Vo" + generateNumber();
 	}
 	
 
@@ -227,13 +224,5 @@ public class My_Account_Page extends BaseTest {
 		assertTrue(myAccount_Page.isProductReviewNameDisplay(product_Title));
 	}
 	
-	
-	@Parameters({"browser"})
-	@AfterClass(alwaysRun = true)
-	public void afterClass(String browserName) {
-		ExtentTestManager.getTest().log(Status.INFO, "Close browser '" + browserName + "'");
-		closeBrowserAndDriver();
-	}
-
 }
 

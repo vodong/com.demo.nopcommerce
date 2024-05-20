@@ -21,7 +21,8 @@
 			<package name="com.nopcommerce.HomePage" />
 			<package name="com.nopcommerce.RegisterPage" />
 			<package name="com.nopcommerce.LoginPage" /> 	
-			<package name="com.nopcommerce.MyAccountPage" /> 
+			<!-- <package name="com.nopcommerce.MyAccountPage" /> -->
+			<package name="com.nopcommerce.SearchPage" /> 
 		</packages>
 	  </test>
 </suite>

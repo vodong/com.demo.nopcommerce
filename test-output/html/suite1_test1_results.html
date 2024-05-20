@@ -12,123 +12,11 @@
 <body>
 <h1>Run on Chrome</h1>
 <p>
-  Test duration: 185.680s
+  Test duration: 130.331s
 </p>
 
 
 
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">com.nopcommerce.MyAccountPage.My_Account_Page</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  My_Account_Login_After_Updating_Password
-      </td>
-  <td class="duration">
-    50.890s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.MyAccountPage.My_Account_Page.My_Account_Login_After_Updating_Password(java.lang.reflect.Method)</span><br />
-    
-        
-
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath:&nbsp; //div[@class=&apos;header-links&apos;]//a[@class=&apos;ico-account&apos;] (tried for 30 second(s) with 500 milliseconds interval)</b></a><br />
-    <div class="stackTrace" id="exception-0">
-              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)<br />
-              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)<br />
-              commons.BasePage.waitForElementVisible(BasePage.java:540)<br />
-              com.nopcommerce.HomePage.HomePageObject.isMyAccountLinkDisplayed(HomePageObject.java:47)<br />
-              com.nopcommerce.MyAccountPage.My_Account_Page.My_Account_Login_After_Updating_Password(My_Account_Page.java:183)<br />
-              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
-              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot; //div[@class=&apos;header-links&apos;]//a[@class=&apos;ico-account&apos;]&quot;}<br/>
-&nbsp; (Session info: chrome=124.0.6367.207)<br/>
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
-System info: host: &apos;DESKTOP-R1KVHLO&apos;, ip: &apos;172.27.224.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.207, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\VODONG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61308}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
-Session ID: 9771450990ae7efbfab10b2f5f9733dd<br/>
-*** Element info: {Using=xpath, value= //div[@class=&apos;header-links&apos;]//a[@class=&apos;ico-account&apos;]}</a><br />
-        <div class="stackTrace" id="exception-1">
-                      java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-                      java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)<br />
-                      java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-                      java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br />
-                      java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
-                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
-                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
-                      org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)<br />
-                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)<br />
-                      commons.BasePage.waitForElementVisible(BasePage.java:540)<br />
-                      com.nopcommerce.HomePage.HomePageObject.isMyAccountLinkDisplayed(HomePageObject.java:47)<br />
-                      com.nopcommerce.MyAccountPage.My_Account_Page.My_Account_Login_After_Updating_Password(My_Account_Page.java:183)<br />
-                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
-                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-                      java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
-                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-                      org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
-                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
-                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
-                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-                      org.testng.TestRunner.run(TestRunner.java:505)<br />
-                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-                      org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-                      org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-                      org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-                      org.testng.TestNG.run(TestNG.java:1017)<br />
-                      org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
-                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                  </div>
-          </div>
-      </td>
-</tr>
-      </table>
 
 
   <table class="resultsTable">
@@ -142,7 +30,7 @@ Session ID: 9771450990ae7efbfab10b2f5f9733dd<br/>
                   Front_Open_Home_Page
       </td>
   <td class="duration">
-    4.355s
+    3.848s
   </td>
   <td class="result">
         
@@ -161,7 +49,7 @@ Session ID: 9771450990ae7efbfab10b2f5f9733dd<br/>
                   Front_Login_Email_And_Input_Invalid_Password
       </td>
   <td class="duration">
-    7.688s
+    7.657s
   </td>
   <td class="result">
         
@@ -176,7 +64,7 @@ Session ID: 9771450990ae7efbfab10b2f5f9733dd<br/>
                   Front_Login_Email_Without_Inputting_Password
       </td>
   <td class="duration">
-    6.551s
+    6.565s
   </td>
   <td class="result">
         
@@ -191,7 +79,7 @@ Session ID: 9771450990ae7efbfab10b2f5f9733dd<br/>
                   Front_Login_With_The_Email_Does_Not_Exist
       </td>
   <td class="duration">
-    6.554s
+    6.654s
   </td>
   <td class="result">
         
@@ -206,7 +94,7 @@ Session ID: 9771450990ae7efbfab10b2f5f9733dd<br/>
                   Front_Login_With_The_Invalid_Email
       </td>
   <td class="duration">
-    5.238s
+    5.241s
   </td>
   <td class="result">
         
@@ -221,7 +109,7 @@ Session ID: 9771450990ae7efbfab10b2f5f9733dd<br/>
                   Front_Login_Without_Inputting
       </td>
   <td class="duration">
-    4.163s
+    4.167s
   </td>
   <td class="result">
         
@@ -236,75 +124,11 @@ Session ID: 9771450990ae7efbfab10b2f5f9733dd<br/>
                   Front_Open_Login_Page
       </td>
   <td class="duration">
-    1.336s
+    1.326s
   </td>
   <td class="result">
         
           <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.LoginPage.Login_Page.Front_Open_Login_Page(java.lang.reflect.Method)</span><br />
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.nopcommerce.MyAccountPage.My_Account_Page</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  My_Account_Add_Address
-      </td>
-  <td class="duration">
-    17.552s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.MyAccountPage.My_Account_Page.My_Account_Add_Address(java.lang.reflect.Method)</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  My_Account_Change_Password
-      </td>
-  <td class="duration">
-    8.160s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.MyAccountPage.My_Account_Page.My_Account_Change_Password(java.lang.reflect.Method)</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  My_Account_Login_Success
-      </td>
-  <td class="duration">
-    5.833s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.MyAccountPage.My_Account_Page.My_Account_Login_Success(java.lang.reflect.Method)</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  My_Account_Update_Customer_Information
-      </td>
-  <td class="duration">
-    14.886s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.MyAccountPage.My_Account_Page.My_Account_Update_Customer_Information(java.lang.reflect.Method)</span><br />
     
         
 
@@ -319,7 +143,7 @@ Session ID: 9771450990ae7efbfab10b2f5f9733dd<br/>
                   Front_Register_An_Account_With_The_Email_Has_Already_Registered
       </td>
   <td class="duration">
-    23.444s
+    23.414s
   </td>
   <td class="result">
         
@@ -334,7 +158,7 @@ Session ID: 9771450990ae7efbfab10b2f5f9733dd<br/>
                   Front_Register_An_Account_With_The_Invalid_Information
       </td>
   <td class="duration">
-    13.968s
+    13.944s
   </td>
   <td class="result">
         
@@ -349,11 +173,150 @@ Session ID: 9771450990ae7efbfab10b2f5f9733dd<br/>
                   Front_Register_An_Account_With_The_Valid_Information
       </td>
   <td class="duration">
-    12.451s
+    12.462s
   </td>
   <td class="result">
         
           <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.RegisterPage.Register_Page.Front_Register_An_Account_With_The_Valid_Information(java.lang.reflect.Method)</span><br />
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.SearchPage.Search_Page</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  Front_Open_Search_Page
+      </td>
+  <td class="duration">
+    3.386s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.SearchPage.Search_Page.Front_Open_Search_Page(java.lang.reflect.Method)</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Search_With_Product_Exist
+      </td>
+  <td class="duration">
+    4.673s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.SearchPage.Search_Page.Search_With_Product_Exist(java.lang.reflect.Method)</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Search_With_The_Correct_Manufactuer
+      </td>
+  <td class="duration">
+    6.783s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.SearchPage.Search_Page.Search_With_The_Correct_Manufactuer(java.lang.reflect.Method)</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Search_With_The_Data_Does_Not_Exist
+      </td>
+  <td class="duration">
+    3.524s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.SearchPage.Search_Page.Search_With_The_Data_Does_Not_Exist(java.lang.reflect.Method)</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Search_With_The_Exatcly_Product_Name
+      </td>
+  <td class="duration">
+    3.547s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.SearchPage.Search_Page.Search_With_The_Exatcly_Product_Name(java.lang.reflect.Method)</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Search_With_The_Incorrect_Manufactuer
+      </td>
+  <td class="duration">
+    6.770s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.SearchPage.Search_Page.Search_With_The_Incorrect_Manufactuer(java.lang.reflect.Method)</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Search_With_The_Parent_Category
+      </td>
+  <td class="duration">
+    5.721s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.SearchPage.Search_Page.Search_With_The_Parent_Category(java.lang.reflect.Method)</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Search_With_The_Sub_Categories
+      </td>
+  <td class="duration">
+    5.678s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.SearchPage.Search_Page.Search_With_The_Sub_Categories(java.lang.reflect.Method)</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  Search_Without_Data
+      </td>
+  <td class="duration">
+    2.413s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.SearchPage.Search_Page.Search_Without_Data(java.lang.reflect.Method)</span><br />
     
         
 
