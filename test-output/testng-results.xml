@@ -1,37 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-20T11:06:07Z" name="Nopcommerce" finished-at="2024-05-20T11:08:17Z" duration-ms="130531">
+  <suite started-at="2024-05-24T03:17:53Z" name="Nopcommerce" finished-at="2024-05-24T03:18:55Z" duration-ms="62332">
     <groups>
-      <group name="Search Account">
-        <method signature="Search_Page.Front_Open_Search_Page(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.SearchPage.Search_Page@58b67519]" name="Front_Open_Search_Page" class="com.nopcommerce.SearchPage.Search_Page"/>
-        <method signature="Search_Page.Search_Without_Data(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.SearchPage.Search_Page@58b67519]" name="Search_Without_Data" class="com.nopcommerce.SearchPage.Search_Page"/>
-        <method signature="Search_Page.Search_With_The_Data_Does_Not_Exist(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.SearchPage.Search_Page@58b67519]" name="Search_With_The_Data_Does_Not_Exist" class="com.nopcommerce.SearchPage.Search_Page"/>
-        <method signature="Search_Page.Search_With_Product_Exist(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.SearchPage.Search_Page@58b67519]" name="Search_With_Product_Exist" class="com.nopcommerce.SearchPage.Search_Page"/>
-        <method signature="Search_Page.Search_With_The_Exatcly_Product_Name(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.SearchPage.Search_Page@58b67519]" name="Search_With_The_Exatcly_Product_Name" class="com.nopcommerce.SearchPage.Search_Page"/>
-        <method signature="Search_Page.Search_With_The_Parent_Category(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.SearchPage.Search_Page@58b67519]" name="Search_With_The_Parent_Category" class="com.nopcommerce.SearchPage.Search_Page"/>
-        <method signature="Search_Page.Search_With_The_Sub_Categories(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.SearchPage.Search_Page@58b67519]" name="Search_With_The_Sub_Categories" class="com.nopcommerce.SearchPage.Search_Page"/>
-        <method signature="Search_Page.Search_With_The_Incorrect_Manufactuer(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.SearchPage.Search_Page@58b67519]" name="Search_With_The_Incorrect_Manufactuer" class="com.nopcommerce.SearchPage.Search_Page"/>
-        <method signature="Search_Page.Search_With_The_Correct_Manufactuer(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.SearchPage.Search_Page@58b67519]" name="Search_With_The_Correct_Manufactuer" class="com.nopcommerce.SearchPage.Search_Page"/>
-      </group> <!-- Search Account -->
-      <group name="Register An Account">
-        <method signature="Register_Page.Front_Register_An_Account_With_The_Invalid_Information(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.RegisterPage.Register_Page@5f18f9d2]" name="Front_Register_An_Account_With_The_Invalid_Information" class="com.nopcommerce.RegisterPage.Register_Page"/>
-        <method signature="Register_Page.Front_Register_An_Account_With_The_Valid_Information(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.RegisterPage.Register_Page@5f18f9d2]" name="Front_Register_An_Account_With_The_Valid_Information" class="com.nopcommerce.RegisterPage.Register_Page"/>
-        <method signature="Register_Page.Front_Register_An_Account_With_The_Email_Has_Already_Registered(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.RegisterPage.Register_Page@5f18f9d2]" name="Front_Register_An_Account_With_The_Email_Has_Already_Registered" class="com.nopcommerce.RegisterPage.Register_Page"/>
-      </group> <!-- Register An Account -->
-      <group name="Login Account">
-        <method signature="Login_Page.Front_Open_Login_Page(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.LoginPage.Login_Page@598260a6]" name="Front_Open_Login_Page" class="com.nopcommerce.LoginPage.Login_Page"/>
-        <method signature="Login_Page.Front_Login_Without_Inputting(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.LoginPage.Login_Page@598260a6]" name="Front_Login_Without_Inputting" class="com.nopcommerce.LoginPage.Login_Page"/>
-        <method signature="Login_Page.Front_Login_With_The_Invalid_Email(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.LoginPage.Login_Page@598260a6]" name="Front_Login_With_The_Invalid_Email" class="com.nopcommerce.LoginPage.Login_Page"/>
-        <method signature="Login_Page.Front_Login_With_The_Email_Does_Not_Exist(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.LoginPage.Login_Page@598260a6]" name="Front_Login_With_The_Email_Does_Not_Exist" class="com.nopcommerce.LoginPage.Login_Page"/>
-        <method signature="Login_Page.Front_Login_Email_Without_Inputting_Password(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.LoginPage.Login_Page@598260a6]" name="Front_Login_Email_Without_Inputting_Password" class="com.nopcommerce.LoginPage.Login_Page"/>
-        <method signature="Login_Page.Front_Login_Email_And_Input_Invalid_Password(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.LoginPage.Login_Page@598260a6]" name="Front_Login_Email_And_Input_Invalid_Password" class="com.nopcommerce.LoginPage.Login_Page"/>
-      </group> <!-- Login Account -->
+      <group name="Product Page">
+        <method signature="Product_Page.Sort_Product_Name_A_To_Z(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.ProductPage.Product_Page@34cf294c]" name="Sort_Product_Name_A_To_Z" class="com.nopcommerce.ProductPage.Product_Page"/>
+        <method signature="Product_Page.Sort_Product_Name_Z_To_A(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.ProductPage.Product_Page@34cf294c]" name="Sort_Product_Name_Z_To_A" class="com.nopcommerce.ProductPage.Product_Page"/>
+        <method signature="Product_Page.Sort_Product_Price_Low_To_High(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.ProductPage.Product_Page@34cf294c]" name="Sort_Product_Price_Low_To_High" class="com.nopcommerce.ProductPage.Product_Page"/>
+        <method signature="Product_Page.Sort_Product_Price_High_To_Low(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.ProductPage.Product_Page@34cf294c]" name="Sort_Product_Price_High_To_Low" class="com.nopcommerce.ProductPage.Product_Page"/>
+        <method signature="Product_Page.Product_Display_3_Products_Per_Page(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.ProductPage.Product_Page@34cf294c]" name="Product_Display_3_Products_Per_Page" class="com.nopcommerce.ProductPage.Product_Page"/>
+        <method signature="Product_Page.Product_Display_6_Products_Per_Page(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.ProductPage.Product_Page@34cf294c]" name="Product_Display_6_Products_Per_Page" class="com.nopcommerce.ProductPage.Product_Page"/>
+        <method signature="Product_Page.Product_Display_9_Products_Per_Page(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.ProductPage.Product_Page@34cf294c]" name="Product_Display_9_Products_Per_Page" class="com.nopcommerce.ProductPage.Product_Page"/>
+      </group> <!-- Product Page -->
     </groups>
-    <test started-at="2024-05-20T11:06:07Z" name="Run on Chrome" finished-at="2024-05-20T11:08:17Z" duration-ms="130531">
-      <class name="com.nopcommerce.HomePage.Home_Page">
-        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.HomePage.Home_Page@3f49e266]" started-at="2024-05-20T11:06:07Z" name="beforeClass" finished-at="2024-05-20T11:06:09Z" duration-ms="2298" status="PASS">
+    <test started-at="2024-05-24T03:17:53Z" name="Run on Chrome" finished-at="2024-05-24T03:18:55Z" duration-ms="62332">
+      <class name="com.nopcommerce.ProductPage.Product_Page">
+        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.ProductPage.Product_Page@34cf294c]" started-at="2024-05-24T03:17:56Z" name="beforeClass" finished-at="2024-05-24T03:17:56Z" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,7 +57,138 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="Front_Open_Home_Page(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.HomePage.Home_Page@3f49e266]" started-at="2024-05-20T11:06:09Z" name="Front_Open_Home_Page" finished-at="2024-05-20T11:06:13Z" duration-ms="3848" status="PASS">
+        <test-method signature="Sort_Product_Name_A_To_Z(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.ProductPage.Product_Page@34cf294c]" started-at="2024-05-24T03:17:56Z" name="Sort_Product_Name_A_To_Z" finished-at="2024-05-24T03:18:02Z" duration-ms="6594" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.ProductPage.Product_Page.Sort_Product_Name_A_To_Z(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Sort_Product_Name_A_To_Z -->
+        <test-method signature="Sort_Product_Name_Z_To_A(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.ProductPage.Product_Page@34cf294c]" started-at="2024-05-24T03:18:02Z" name="Sort_Product_Name_Z_To_A" finished-at="2024-05-24T03:18:05Z" depends-on-methods="com.nopcommerce.ProductPage.Product_Page.Sort_Product_Name_A_To_Z" duration-ms="3135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.ProductPage.Product_Page.Sort_Product_Name_Z_To_A(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Sort_Product_Name_Z_To_A -->
+        <test-method signature="Sort_Product_Price_Low_To_High(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.ProductPage.Product_Page@34cf294c]" started-at="2024-05-24T03:18:05Z" name="Sort_Product_Price_Low_To_High" finished-at="2024-05-24T03:18:09Z" depends-on-methods="com.nopcommerce.ProductPage.Product_Page.Sort_Product_Name_Z_To_A" duration-ms="3131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.ProductPage.Product_Page.Sort_Product_Price_Low_To_High(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Sort_Product_Price_Low_To_High -->
+        <test-method signature="Sort_Product_Price_High_To_Low(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.ProductPage.Product_Page@34cf294c]" started-at="2024-05-24T03:18:09Z" name="Sort_Product_Price_High_To_Low" finished-at="2024-05-24T03:18:12Z" depends-on-methods="com.nopcommerce.ProductPage.Product_Page.Sort_Product_Price_Low_To_High" duration-ms="3130" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.ProductPage.Product_Page.Sort_Product_Price_High_To_Low(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Sort_Product_Price_High_To_Low -->
+        <test-method signature="Product_Display_3_Products_Per_Page(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.ProductPage.Product_Page@34cf294c]" started-at="2024-05-24T03:18:12Z" name="Product_Display_3_Products_Per_Page" finished-at="2024-05-24T03:18:28Z" depends-on-methods="com.nopcommerce.ProductPage.Product_Page.Sort_Product_Price_High_To_Low" duration-ms="16738" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.ProductPage.Product_Page.Product_Display_3_Products_Per_Page(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Product_Display_3_Products_Per_Page -->
+        <test-method signature="Product_Display_6_Products_Per_Page(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.ProductPage.Product_Page@34cf294c]" started-at="2024-05-24T03:18:28Z" name="Product_Display_6_Products_Per_Page" finished-at="2024-05-24T03:18:42Z" depends-on-methods="com.nopcommerce.ProductPage.Product_Page.Product_Display_3_Products_Per_Page" duration-ms="13206" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.ProductPage.Product_Page.Product_Display_6_Products_Per_Page(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Product_Display_6_Products_Per_Page -->
+        <test-method signature="Product_Display_9_Products_Per_Page(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.ProductPage.Product_Page@34cf294c]" started-at="2024-05-24T03:18:42Z" name="Product_Display_9_Products_Per_Page" finished-at="2024-05-24T03:18:55Z" depends-on-methods="com.nopcommerce.ProductPage.Product_Page.Product_Display_3_Products_Per_Page" duration-ms="13206" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.ProductPage.Product_Page.Product_Display_9_Products_Per_Page(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Product_Display_9_Products_Per_Page -->
+        <test-method is-config="true" signature="afterClass(java.lang.String)[pri:0, instance:com.nopcommerce.ProductPage.Product_Page@34cf294c]" started-at="2024-05-24T03:18:55Z" name="afterClass" finished-at="2024-05-24T03:18:55Z" duration-ms="242" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.ProductPage.Product_Page -->
+      <class name="com.nopcommerce.HomePage.Home_Page">
+        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.HomePage.Home_Page@15f2eda3]" started-at="2024-05-24T03:17:53Z" name="beforeClass" finished-at="2024-05-24T03:17:55Z" duration-ms="2427" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[4444]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="Front_Open_Home_Page(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.HomePage.Home_Page@15f2eda3]" started-at="2024-05-24T03:17:55Z" name="Front_Open_Home_Page" finished-at="2024-05-24T03:17:56Z" duration-ms="394" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -84,344 +200,6 @@
           </reporter-output>
         </test-method> <!-- Front_Open_Home_Page -->
       </class> <!-- com.nopcommerce.HomePage.Home_Page -->
-      <class name="com.nopcommerce.LoginPage.Login_Page">
-        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.LoginPage.Login_Page@598260a6]" started-at="2024-05-20T11:07:03Z" name="beforeClass" finished-at="2024-05-20T11:07:03Z" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[local]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[localhost]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[4444]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="Front_Open_Login_Page(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.LoginPage.Login_Page@598260a6]" started-at="2024-05-20T11:07:03Z" name="Front_Open_Login_Page" finished-at="2024-05-20T11:07:04Z" duration-ms="1326" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.LoginPage.Login_Page.Front_Open_Login_Page(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Front_Open_Login_Page -->
-        <test-method signature="Front_Login_Without_Inputting(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.LoginPage.Login_Page@598260a6]" started-at="2024-05-20T11:07:04Z" name="Front_Login_Without_Inputting" finished-at="2024-05-20T11:07:08Z" depends-on-methods="com.nopcommerce.LoginPage.Login_Page.Front_Open_Login_Page" duration-ms="4167" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.LoginPage.Login_Page.Front_Login_Without_Inputting(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Front_Login_Without_Inputting -->
-        <test-method signature="Front_Login_With_The_Invalid_Email(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.LoginPage.Login_Page@598260a6]" started-at="2024-05-20T11:07:08Z" name="Front_Login_With_The_Invalid_Email" finished-at="2024-05-20T11:07:13Z" depends-on-methods="com.nopcommerce.LoginPage.Login_Page.Front_Login_Without_Inputting" duration-ms="5241" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.LoginPage.Login_Page.Front_Login_With_The_Invalid_Email(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Front_Login_With_The_Invalid_Email -->
-        <test-method signature="Front_Login_With_The_Email_Does_Not_Exist(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.LoginPage.Login_Page@598260a6]" started-at="2024-05-20T11:07:13Z" name="Front_Login_With_The_Email_Does_Not_Exist" finished-at="2024-05-20T11:07:20Z" depends-on-methods="com.nopcommerce.LoginPage.Login_Page.Front_Login_With_The_Invalid_Email" duration-ms="6654" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.LoginPage.Login_Page.Front_Login_With_The_Email_Does_Not_Exist(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Front_Login_With_The_Email_Does_Not_Exist -->
-        <test-method signature="Front_Login_Email_Without_Inputting_Password(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.LoginPage.Login_Page@598260a6]" started-at="2024-05-20T11:07:20Z" name="Front_Login_Email_Without_Inputting_Password" finished-at="2024-05-20T11:07:27Z" depends-on-methods="com.nopcommerce.LoginPage.Login_Page.Front_Login_With_The_Email_Does_Not_Exist" duration-ms="6565" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.LoginPage.Login_Page.Front_Login_Email_Without_Inputting_Password(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Front_Login_Email_Without_Inputting_Password -->
-        <test-method signature="Front_Login_Email_And_Input_Invalid_Password(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.LoginPage.Login_Page@598260a6]" started-at="2024-05-20T11:07:27Z" name="Front_Login_Email_And_Input_Invalid_Password" finished-at="2024-05-20T11:07:34Z" depends-on-methods="com.nopcommerce.LoginPage.Login_Page.Front_Login_Email_Without_Inputting_Password" duration-ms="7657" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.LoginPage.Login_Page.Front_Login_Email_And_Input_Invalid_Password(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Front_Login_Email_And_Input_Invalid_Password -->
-      </class> <!-- com.nopcommerce.LoginPage.Login_Page -->
-      <class name="com.nopcommerce.SearchPage.Search_Page">
-        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.SearchPage.Search_Page@58b67519]" started-at="2024-05-20T11:07:34Z" name="beforeClass" finished-at="2024-05-20T11:07:34Z" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[local]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[localhost]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[4444]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="Front_Open_Search_Page(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.SearchPage.Search_Page@58b67519]" started-at="2024-05-20T11:07:34Z" name="Front_Open_Search_Page" finished-at="2024-05-20T11:07:38Z" duration-ms="3386" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.SearchPage.Search_Page.Front_Open_Search_Page(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Front_Open_Search_Page -->
-        <test-method signature="Search_Without_Data(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.SearchPage.Search_Page@58b67519]" started-at="2024-05-20T11:07:38Z" name="Search_Without_Data" finished-at="2024-05-20T11:07:40Z" depends-on-methods="com.nopcommerce.SearchPage.Search_Page.Front_Open_Search_Page" duration-ms="2413" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.SearchPage.Search_Page.Search_Without_Data(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Search_Without_Data -->
-        <test-method signature="Search_With_The_Data_Does_Not_Exist(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.SearchPage.Search_Page@58b67519]" started-at="2024-05-20T11:07:40Z" name="Search_With_The_Data_Does_Not_Exist" finished-at="2024-05-20T11:07:44Z" depends-on-methods="com.nopcommerce.SearchPage.Search_Page.Search_Without_Data" duration-ms="3524" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.SearchPage.Search_Page.Search_With_The_Data_Does_Not_Exist(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Search_With_The_Data_Does_Not_Exist -->
-        <test-method signature="Search_With_Product_Exist(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.SearchPage.Search_Page@58b67519]" started-at="2024-05-20T11:07:44Z" name="Search_With_Product_Exist" finished-at="2024-05-20T11:07:48Z" depends-on-methods="com.nopcommerce.SearchPage.Search_Page.Search_With_The_Data_Does_Not_Exist" duration-ms="4673" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.SearchPage.Search_Page.Search_With_Product_Exist(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Search_With_Product_Exist -->
-        <test-method signature="Search_With_The_Exatcly_Product_Name(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.SearchPage.Search_Page@58b67519]" started-at="2024-05-20T11:07:48Z" name="Search_With_The_Exatcly_Product_Name" finished-at="2024-05-20T11:07:52Z" depends-on-methods="com.nopcommerce.SearchPage.Search_Page.Search_With_Product_Exist" duration-ms="3547" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.SearchPage.Search_Page.Search_With_The_Exatcly_Product_Name(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Search_With_The_Exatcly_Product_Name -->
-        <test-method signature="Search_With_The_Parent_Category(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.SearchPage.Search_Page@58b67519]" started-at="2024-05-20T11:07:52Z" name="Search_With_The_Parent_Category" finished-at="2024-05-20T11:07:58Z" depends-on-methods="com.nopcommerce.SearchPage.Search_Page.Search_With_The_Exatcly_Product_Name" duration-ms="5721" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.SearchPage.Search_Page.Search_With_The_Parent_Category(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Search_With_The_Parent_Category -->
-        <test-method signature="Search_With_The_Sub_Categories(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.SearchPage.Search_Page@58b67519]" started-at="2024-05-20T11:07:58Z" name="Search_With_The_Sub_Categories" finished-at="2024-05-20T11:08:03Z" depends-on-methods="com.nopcommerce.SearchPage.Search_Page.Search_With_The_Parent_Category" duration-ms="5678" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.SearchPage.Search_Page.Search_With_The_Sub_Categories(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Search_With_The_Sub_Categories -->
-        <test-method signature="Search_With_The_Incorrect_Manufactuer(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.SearchPage.Search_Page@58b67519]" started-at="2024-05-20T11:08:03Z" name="Search_With_The_Incorrect_Manufactuer" finished-at="2024-05-20T11:08:10Z" depends-on-methods="com.nopcommerce.SearchPage.Search_Page.Search_With_The_Sub_Categories" duration-ms="6770" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.SearchPage.Search_Page.Search_With_The_Incorrect_Manufactuer(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Search_With_The_Incorrect_Manufactuer -->
-        <test-method signature="Search_With_The_Correct_Manufactuer(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.SearchPage.Search_Page@58b67519]" started-at="2024-05-20T11:08:10Z" name="Search_With_The_Correct_Manufactuer" finished-at="2024-05-20T11:08:17Z" depends-on-methods="com.nopcommerce.SearchPage.Search_Page.Search_With_The_Incorrect_Manufactuer" duration-ms="6783" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.SearchPage.Search_Page.Search_With_The_Correct_Manufactuer(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Search_With_The_Correct_Manufactuer -->
-        <test-method is-config="true" signature="afterClass(java.lang.String)[pri:0, instance:com.nopcommerce.SearchPage.Search_Page@58b67519]" started-at="2024-05-20T11:08:17Z" name="afterClass" finished-at="2024-05-20T11:08:17Z" duration-ms="244" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.nopcommerce.SearchPage.Search_Page -->
-      <class name="com.nopcommerce.RegisterPage.Register_Page">
-        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.RegisterPage.Register_Page@5f18f9d2]" started-at="2024-05-20T11:06:13Z" name="beforeClass" finished-at="2024-05-20T11:06:13Z" duration-ms="11" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[local]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[localhost]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[4444]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="Front_Register_An_Account_With_The_Invalid_Information(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.RegisterPage.Register_Page@5f18f9d2]" started-at="2024-05-20T11:06:13Z" name="Front_Register_An_Account_With_The_Invalid_Information" finished-at="2024-05-20T11:06:27Z" duration-ms="13944" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.RegisterPage.Register_Page.Front_Register_An_Account_With_The_Invalid_Information(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Front_Register_An_Account_With_The_Invalid_Information -->
-        <test-method signature="Front_Register_An_Account_With_The_Valid_Information(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.RegisterPage.Register_Page@5f18f9d2]" started-at="2024-05-20T11:06:27Z" name="Front_Register_An_Account_With_The_Valid_Information" finished-at="2024-05-20T11:06:39Z" depends-on-methods="com.nopcommerce.RegisterPage.Register_Page.Front_Register_An_Account_With_The_Invalid_Information" duration-ms="12462" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.RegisterPage.Register_Page.Front_Register_An_Account_With_The_Valid_Information(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Front_Register_An_Account_With_The_Valid_Information -->
-        <test-method signature="Front_Register_An_Account_With_The_Email_Has_Already_Registered(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.RegisterPage.Register_Page@5f18f9d2]" started-at="2024-05-20T11:06:39Z" name="Front_Register_An_Account_With_The_Email_Has_Already_Registered" finished-at="2024-05-20T11:07:03Z" depends-on-methods="com.nopcommerce.RegisterPage.Register_Page.Front_Register_An_Account_With_The_Valid_Information, com.nopcommerce.RegisterPage.Register_Page.Front_Register_An_Account_With_The_Invalid_Information" duration-ms="23414" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.RegisterPage.Register_Page.Front_Register_An_Account_With_The_Email_Has_Already_Registered(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Front_Register_An_Account_With_The_Email_Has_Already_Registered -->
-      </class> <!-- com.nopcommerce.RegisterPage.Register_Page -->
     </test> <!-- Run on Chrome -->
   </suite> <!-- Nopcommerce -->
 </testng-results>

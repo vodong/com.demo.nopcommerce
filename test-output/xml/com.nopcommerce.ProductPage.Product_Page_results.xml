@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on Chrome"
+           tests="7"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="59.140">
+  <properties />
+  
+  
+            <testcase name="Sort_Product_Price_Low_To_High" time="3.131" classname="com.nopcommerce.ProductPage.Product_Page" />
+                <testcase name="Product_Display_3_Products_Per_Page" time="16.738" classname="com.nopcommerce.ProductPage.Product_Page" />
+                <testcase name="Sort_Product_Price_High_To_Low" time="3.130" classname="com.nopcommerce.ProductPage.Product_Page" />
+                <testcase name="Sort_Product_Name_A_To_Z" time="6.594" classname="com.nopcommerce.ProductPage.Product_Page" />
+                <testcase name="Sort_Product_Name_Z_To_A" time="3.135" classname="com.nopcommerce.ProductPage.Product_Page" />
+                <testcase name="Product_Display_6_Products_Per_Page" time="13.206" classname="com.nopcommerce.ProductPage.Product_Page" />
+                <testcase name="Product_Display_9_Products_Per_Page" time="13.206" classname="com.nopcommerce.ProductPage.Product_Page" />
+      
+</testsuite>

@@ -41,10 +41,19 @@ public class GlobalConstantsProductlistPage {
 			+ "@hub-cloud.browserstack.com/wd/hub";
 	
 	private final String messageProductReviewIsSuccessfullyDisplayed = "Product review is successfully added.";
+	private final String nameProductCategoryList1 = "Notebooks";
 	private final String nameProductCategoryList = "Desktops";
 	private final String productName = "Build your own computer";
 	private final String addYourReviewLink = "Add your review";
 	private final String reviewTitleContent = "Edward Comment";
 	private final String reviewTextContent = "Good Product";
 	private final String ratingOption = "addproductrating_3";
+	private final String sortByNameAToZ = "Name: A to Z";
+	private final String sortByNameZToA = "Name: Z to A";
+	private final String sortByPriceLowToHigh = "Price: Low to High";
+	private final String sortByPriceHighToLow = "Price: High to Low";
+	private final String display3ProductsOption = "3";
+	private final String display6ProductsOption = "6";
+	private final String display9ProductsOption = "9";
+	private final String pageNumber2 = "2";
 }

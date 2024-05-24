@@ -123,7 +123,7 @@ public class My_Account_Page extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Address Page - Step 07: Select Country");
 		myAddress_Page.selectCountryAddress(GlobalConstantsMyAddressPage.getGlobalConstants().getCountry());
 //		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Address Page - Step 05: Select State / Province");
-//		//myAccount_Page.selectStateProvinceAddress();
+//		myAccount_Page.selectStateProvinceAddress();
 		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Address Page - Step 08: Input City");
 		myAddress_Page.inputCityAddress("Hồ Chí Minh");
 		ExtentTestManager.getTest().log(Status.INFO, "My Account - Customer Address Page - Step 09: Input Address 1");

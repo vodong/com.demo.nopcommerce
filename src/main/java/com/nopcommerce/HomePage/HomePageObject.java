@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.nopcommerce.LoginPage.LoginPageObject;
 import com.nopcommerce.MyAccountPage.MyAccountPageObject;
+import com.nopcommerce.ProductCategoryPage.ProductCategoryPageObject;
 import com.nopcommerce.RegisterPage.RegisterPageObject;
 import com.nopcommerce.SearchPage.SearchPageObject;
 
@@ -11,6 +12,7 @@ import commons.BasePage;
 import commons.GlobalConstants;
 import commons.PageGeneratorManager;
 import pageUIs.nocommerce.HomePage.FrontHomePageUI;
+import pageUIs.nocommerce.ProductPageUI.ProductPageUI;
 
 public class HomePageObject extends BasePage {
 	private WebDriver driver;
@@ -67,6 +69,12 @@ public class HomePageObject extends BasePage {
 		clickToElement(driver, FrontHomePageUI.SEARCH_LINK_FOOTER);
 		sleepInSecond(ShortTime);
 		return PageGeneratorManager.getSearchPage(driver);
+	}
+
+	public ProductCategoryPageObject clickOnProductCategoryOnHeaderMenu(String productCategoryLink) {
+		waitForElementClickable(driver, ProductPageUI.PRODUCT_CATEGORY, productCategoryLink);
+		clickToElement(driver, ProductPageUI.PRODUCT_CATEGORY, productCategoryLink);
+		return PageGeneratorManager.getProductCategoryPageObject(driver);
 	}
 }
 

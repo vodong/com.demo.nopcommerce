@@ -48,7 +48,7 @@ public class Home_Page extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Home Page - Step 01: Open Home Page");
 		getCurrentUrl = home_Page.getPageUrl(driver);
 		assertEquals(home_Page.getPageUrl(driver), GlobalConstants.getGlobalConstants().getHomeURL());
-		register_Page = home_Page.openRegisterPage();
+//		register_Page = home_Page.openRegisterPage();
 	}
 }
 

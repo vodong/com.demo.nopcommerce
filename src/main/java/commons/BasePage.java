@@ -1,5 +1,6 @@
 package commons;
 
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -384,7 +385,7 @@ public class BasePage {
 			return false;
 		}
 	}
-
+	
 	protected boolean isElementEnabled(WebDriver driver, String locatorType) {
 		return getWebElement(driver, locatorType).isEnabled();
 	}
@@ -588,12 +589,13 @@ public class BasePage {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByLocator(locatorType)));
 	}
-
+	
 	protected void waitForElementClickable(WebDriver driver, String locatorType, String... dynamicValue) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(
 				ExpectedConditions.elementToBeClickable(getByLocator(getDynamicElement(locatorType, dynamicValue))));
 	}
+	
 
 	/*
 	 * https://www.youtube.com/watch?v=D6zh-yUL1fo&list=PLo1QA-RK2zyqDT_-l5anWh-

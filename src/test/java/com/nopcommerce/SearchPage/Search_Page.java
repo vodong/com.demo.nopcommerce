@@ -178,14 +178,6 @@ public class Search_Page extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Search Page - Step 06: Verify Search Result");
 		assertTrue(search_Page.isProductDisplayed(GlobalConstantsSearchPage.getGlobalConstants().getProduct3()));
 	}
-	
-	
-	@Parameters({"browser"})
-	@AfterClass(alwaysRun = true)
-	public void afterClass(String browserName) {
-		ExtentTestManager.getTest().log(Status.INFO, "Close browser '" + browserName + "'");
-		closeBrowserAndDriver();
-	}
 
 }
 
